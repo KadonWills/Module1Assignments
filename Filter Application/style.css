@@ -1,0 +1,197 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    margin: 0px;
+    background-color: rgba(5, 180, 180, 0.877);
+    padding: 20px 0px;
+    text-align: center;
+    border-bottom: 5px solid rgb(182, 181, 179);
+}
+.logo{
+    margin: 0px;
+    color: aliceblue;
+}
+.fa-film{
+    color: teal;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 2s;
+    cursor: pointer;
+}
+.fa-film:hover{
+    color: rgb(27, 26, 26);
+}
+.searchBar{
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+}
+.input{
+    width: 60%;
+    padding: 10px;
+    transition: 1s;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: none;
+    border: none;
+    border: 1px solid rgb(170, 167, 167);
+    outline: none;
+}
+.searchbtn{
+    padding: 10px;
+    margin-left: -5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: none;
+    border: none;
+    border: 1px solid rgba(5, 180, 180, 0.877) ;
+    outline: none;
+    background-color:rgba(5, 180, 180, 0.877);
+    transition:0.7s;
+    cursor: pointer;
+}
+.searchbtn:hover{
+    background-color: rgba(30, 226, 226, 0.877);
+}
+.fa-search{
+    font-size: 110%;
+    color: rgb(0, 110, 110);
+}
+#movies{
+    text-align: center;
+}
+#homeBtn{
+    text-align: center;
+    margin: 20px auto;
+    display: none;
+}
+.homebtn{
+    width: 15%;
+    border: none;
+    background: none;
+    padding: 5px 0px;
+    background-color: rgba(30, 226, 226, 0.877);
+    border-radius: 17px;
+    font-size: 150%;
+    color: teal;
+    transition: 2s;
+    outline: none;
+    cursor: pointer;
+}
+.homebtn:hover{
+    background-color: rgba(1, 100, 100, 0.877);
+    color: white;
+}
+.topBorder{
+    border-top: 5px solid rgb(182, 181, 179);
+}
+#display{
+    width: 150px;
+    border: 0.5px solid rgb(194, 191, 191);
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    margin: 20px auto;
+    display: none;
+    border: 1px solid rgb(182, 181, 179);
+}
+.m1,.m2,.m3,.m4,.m5,.m6,.m7,.m8,.m9,.m10,.m11,.m12,.m13,.m14,.m15,.m16,.m17,.m18,.m19,.m20,.m21,.m22,.m23,.m24,.m25{
+    display: inline-block;
+    margin: 20px;
+    border: 0.5px solid rgb(194, 191, 191);
+    border-top: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.aveng{
+    width: 150px;
+    overflow: hidden;
+    height: 200px;
+    transition: 2s;
+}
+.avengImg{
+    transition: 0.7s;
+}
+.avengImg:hover{
+    width: 160px;
+    height: 220px;
+}
+p{
+    margin: 5px;
+    padding: 1px;
+    text-align: center;
+    color: rgb(117, 112, 112);
+}
+.glossary{
+    display: block;
+    margin: 10px auto 30px;
+    color: rgb(73, 73, 73);
+}
+h5{
+    color: rgb(179, 177, 177);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+#l1,#l2,#l3,#l4,#l5{
+    margin: 10px;
+    cursor: pointer;
+    color: rgba(5, 180, 180, 0.877);
+    transition: 0.7s;
+    font-size: 100%;
+}
+#l1:hover,#l2:hover,#l3:hover,#l4:hover,#l5:hover{
+    color: orange;
+}
+#l1{
+    color: orange;
+}
+#list2,#list3,#list4,#list5{
+    display: none;
+}
+#error{
+    display: none;
+    text-align: center;
+    margin: 20px auto;
+    width: 50%;
+    padding: 20px;
+    color: rgb(95, 12, 12);
+    font-size: 120%;
+    border-radius: 10px;
+    background-color: rgba(230, 77, 77, 0.623);
+}
+.footer{
+    text-align: center;
+    border-top: 5px solid rgb(182, 181, 179);
+    color: rgb(151, 145, 145)
+}
+@media only screen and (max-width: 600px) {
+    .input{
+        width: 80%;
+        margin-top: 82px;
+    }
+    .header{
+        position: fixed;
+        width: 100%;
+    }
+    .homebtn{
+        width: 50%;
+        font-size: 130%;
+        padding: 10px;
+    }
+    .aveng{
+        overflow: auto;
+        width: 200px;
+        height: 250px;
+    }
+    #display{
+        width: 200px;
+    }
+    .avengImg{
+        width: 200px;
+        height: 250px;
+        transition: 2s;
+    }
+}

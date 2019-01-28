@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zonya Movies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="logo">
+                <i class="fa fa-film"></i>Zonya Movies
+            </h1>
+        </div>
+        <div class="searchBar" id="top">
+            <input type="text" id="userInput" class="input" placeholder="Search Movies with name..." onfocus="this.style.boxShadow='0px 0px 10px rgba(5, 180, 180, 0.877)', this.style.border='none'"
+                onblur="this.style.boxShadow = 'none', this.style.border='1px solid rgb(170, 167, 167)'" title="Search Movies">
+            <button class="searchbtn" title="Search" onclick="search();">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <div class="topBorder">
+
+    </div>
+    <div id="display">
+
+    </div>
+    <div id="error">
+
+    </div>
+    <div id="homeBtn">
+        <button class="homebtn" onclick="location.reload();">
+            <i class="fa fa-arrow-left"></i> Home </button>
+    </div>
+    <div id="movies">
+        <div id="list1">
+            <div class="m1" id="avengers">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/hollywood/1.jpg" onclick="displayMovie('./images/hollywood/1.jpg' ,'avengers')" alt="Avengers"
+                        title="Avengers" height="200px;" width="150px;" id="avengers">
+                </div>
+                <p> Avengers</p>
+                <p>IDMB Rating: 8.9</p>
+            </div>
+            <div class="m2" id="sanju">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/bollywood/1.jpg" onclick="displayMovie('./images/bollywood/1.jpg','sanju')" alt="Sanju"
+                        title="Sanju" height="200px;" width="150px;" id="sanju">
+                </div>
+                <p> Sanju</p>
+                <p>IDMB Rating: 7.6</p>
+            </div>
+            <div class="m3" id="namaloomafrad">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/lollywood/1.jpg" onclick="displayMovie('./images/lollywood/1.jpg','namaloomafrad')" alt="Na Maloom Afrad"
+                        title="Na Maloom Afrad" height="200px;" width="150px;" id="na maloom afrad">
+                </div>
+                <p> Na Maloom Afrad</p>
+                <p>IDMB Rating: 6.4</p>
+            </div>
+            <div class="m4" id="incredibles">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/cartoons/1.jpg" onclick="displayMovie('./images/cartoons/1.jpg','incredibles')" alt="Incredibles 2"
+                        title="Incredibles 2" height="200px;" width="150px;" id="incredibles 2">
+                </div>
+                <p> Incredibles</p>
+                <p>IDMB Rating: 5.5</p>
+            </div>
+            <div class="m5" id="bahubali">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/tollywood/1.jpg" onclick="displayMovie('./images/tollywood/1.jpg','bahubali')" alt="Bahubali"
+                        title="Bahubali" height="200px;" width="150px;" id="bahubali">
+                </div>
+                <p> Bahubali</p>
+                <p>IDMB Rating: 7.3</p>
+            </div>
+        </div>
+        <div id="list2">
+            <div class="m6" id="blackpanther">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/hollywood/2.jpg" onclick="displayMovie('./images/hollywood/2.jpg','blackpanther')" alt="Black Panther"
+                        title="Black Panther" height="200px;" width="150px;" id="black panther">
+                </div>
+                <p> Black Panther</p>
+                <p>IDMB Rating: 7.4</p>
+            </div>
+            <div class="m7" id="gold">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/bollywood/2.jpg" onclick="displayMovie('./images/bollywood/2.jpg','gold')" alt="Gold"
+                        title="Gold" height="200px;" width="150px;" id="gold">
+                </div>
+                <p> Gold</p>
+                <p>IDMB Rating: 6.6</p>
+            </div>
+            <div class="m8" id="waar">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/lollywood/2.jpg" onclick="displayMovie('./images/lollywood/2.jpg','waar')" alt="Waar"
+                        title="Waar" height="200px;" width="150px;" id="waar">
+                </div>
+                <p>Waar</p>
+                <p>IDMB Rating: 5.4</p>
+            </div>
+            <div class="m9" id="moana">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/cartoons/2.jpg" onclick="displayMovie('./images/cartoons/2.jpg','moana')" alt="Moana"
+                        title="Moana" height="200px;" width="150px;" id="moana">
+                </div>
+                <p>Moana</p>
+                <p>IDMB Rating: 7.5</p>
+            </div>
+            <div class="m10" id="superkhiladi">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/tollywood/2.jpg" onclick="displayMovie('./images/tollywood/2.jpg','superkhiladi')" alt="Super Khiladi"
+                        title="Super Khiladi" height="200px;" width="150px;" id="super khiladi">
+                </div>
+                <p> Super Khiladi </p>
+                <p>IDMB Rating: 6.1</p>
+            </div>
+        </div>
+        <div id="list3">
+            <div class="m11" id="spiderman">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/hollywood/3.jpg" onclick="displayMovie('./images/hollywood/3.jpg','spiderman')" alt="Spiderman Coming Home"
+                        title="Spiderman Coming Home" height="200px;" width="150px;" id="spiderman">
+                </div>
+                <p>Spiderman</p>
+                <p>IDMB Rating: 7.8</p>
+            </div>
+            <div class="m12" id="sultan">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/bollywood/3.jpg" onclick="displayMovie('./images/bollywood/3.jpg','sultan')" alt="Sultan"
+                        title="Sultan" height="200px;" width="150px;" id="sultan">
+                </div>
+                <p>Sultan</p>
+                <p>IDMB Rating: 5.6</p>
+            </div>
+            <div class="m13" id="veerna">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/lollywood/3.jpg" onclick="displayMovie('./images/lollywood/3.jpg','veerna')" alt="Veerna"
+                        title="Veerna" height="200px;" width="150px;" id="veerna">
+                </div>
+                <p>Veerna</p>
+                <p>IDMB Rating: 6.9</p>
+            </div>
+            <div class="m14" id="frozen">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/cartoons/3.jpg" onclick="displayMovie('./images/cartoons/3.jpg','frozen')" alt="Frozen"
+                        title="Frozen" height="200px;" width="150px;" id="frozen">
+                </div>
+                <p>Frozen</p>
+                <p>IDMB Rating: 5.8</p>
+            </div>
+            <div class="m15" id="rakshak">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/tollywood/3.jpg" onclick="displayMovie('./images/tollywood/3.jpg','rakshak')" alt="Rakshak"
+                        title="Rakshak" height="200px;" width="150px;" id="rakshak">
+                </div>
+                <p>Rakshak</p>
+                <p>IDMB Rating: 7.3</p>
+            </div>
+        </div>
+        <div id="list4">
+            <div class="m16" id="thepredator">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/hollywood/4.jpg" onclick="displayMovie('./images/hollywood/4.jpg','thepredator')" alt="The Predator"
+                        title="The Predator" height="200px;" width="150px;" id="the predator">
+                </div>
+                <p>The Predator</p>
+                <p>IDMB Rating: 4.3</p>
+            </div>
+            <div class="m17" id="dangal">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/bollywood/4.jpg" onclick="displayMovie('./images/bollywood/4.jpg','dangal')" alt="Dangal"
+                        title="Dangal" height="200px;" width="150px;" id="dangal">
+                </div>
+                <p>Dangal</p>
+                <p>IDMB Rating: 7.6</p>
+            </div>
+            <div class="m18" id="parchi">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/lollywood/4.jpg" onclick="displayMovie('./images/lollywood/4.jpg','parchi')" alt="Parchi"
+                        title="Parchi" height="200px;" width="150px;" id="parchi">
+                </div>
+                <p>Parchi</p>
+                <p>IDMB Rating: 5.4</p>
+            </div>
+            <div class="m19" id="coco">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/cartoons/4.jpg" onclick="displayMovie('./images/cartoons/4.jpg','coco')" alt="Coco" title="Coco"
+                        height="200px;" width="150px;" id="coco">
+                </div>
+                <p>Coco</p>
+                <p>IDMB Rating: 6.5</p>
+            </div>
+            <div class="m20" id="kanchana">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/tollywood/4.jpg" onclick="displayMovie('./images/tollywood/4.jpg','kanchana')" alt="Kanchana"
+                        title="Kanchana" height="200px;" width="150px;" id="kanchana">
+                </div>
+                <p>Kanchana</p>
+                <p>IDMB Rating: 4.3</p>
+            </div>
+        </div>
+        <div id="list5">
+            <div class="m21" id="wonderwomen">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/hollywood/5.jpg" onclick="displayMovie('./images/hollywood/5.jpg','wonderwomen')" alt="Wonder Women"
+                        title="Wonder Women" height="200px;" width="150px;" id="wonder women">
+                </div>
+                <p>Wonder Women</p>
+                <p>IDMB Rating: 8.7</p>
+            </div>
+            <div class="m22" id="pk">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/bollywood/5.jpg" onclick="displayMovie('./images/bollywood/5.jpg','pk')" alt="PK" title="PK"
+                        height="200px;" width="150px;" id="pk">
+                </div>
+                <p>PK</p>
+                <p>IDMB Rating: 8.6</p>
+            </div>
+            <div class="m23" id="mainhoonshahidafridi">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/lollywood/5.jpg" onclick="displayMovie('./images/lollywood/5.jpg','mainhoonshahidafridi')"
+                        alt="Main Hon Shahid Afridi" title="Main Hon Shahid Afridi" height="200px;" width="150px;" id="main hoon shahid afridi">
+                </div>
+                <p>Main Shahid Afridi</p>
+                <p>IDMB Rating: 6.1</p>
+            </div>
+            <div class="m24" id="zootopia">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/cartoons/5.jpg" onclick="displayMovie('./images/cartoons/5.jpg','zootopia')" alt="Zootopia"
+                        title="Zootopia" height="200px;" width="150px;" id="zootopia">
+                </div>
+                <p>Zootopia</p>
+                <p>IDMB Rating: 7.7</p>
+            </div>
+            <div class="m25" id="khatarnakkhiladi">
+                <div class="aveng">
+                    <img class="avengImg" src="./images/tollywood/5.jpg" onclick="displayMovie('./images/tollywood/5.jpg','khatarnakkhiladi')"
+                        alt="Khatarnak Khiladi" title="Khatarnak Khiladi" height="200px;" width="150px;" id="khatarnak khiladi">
+                </div>
+                <p>Khataranak Khiladi</p>
+                <p>IDMB Rating: 3.3</p>
+            </div>
+        </div>
+        <div class="glossary">
+            <p>
+                <span>
+                    <i class="fa fa-chevron-left"></i>
+                </span>
+                <a href="#top" style="text-decoration:none">
+                    <span id="l1" onclick="glossary('list1','l1')">1</span>
+                </a>
+                <a href="#top" style="text-decoration:none">
+                    <span id="l2" onclick="glossary('list2','l2')">2</span>
+                </a>
+                <a href="#top" style="text-decoration:none">
+                    <span id="l3" onclick="glossary('list3','l3')">3</span>
+                </a>
+                <a href="#top" style="text-decoration:none">
+                    <span id="l4" onclick="glossary('list4','l4')">4</span>
+                </a>
+                <a href="#top" style="text-decoration:none">
+                    <span id="l5" onclick="glossary('list5','l5')">5 </span>
+                </a>
+                <span>
+                    <i class="fa fa-chevron-right"></i>
+                </span>
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <h5>@Copyrights 2018-19. All Rights Reserved.</h5>
+    </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="sweetalert2.js"></script>
+</body>
+
+</html>
