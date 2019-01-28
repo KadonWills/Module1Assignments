@@ -1,0 +1,160 @@
+body{
+    margin: 0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(3, 95, 95);
+}
+.header{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: rgb(8, 148, 148);
+    padding: 20px 0px;
+    border-bottom: rgb(233, 95, 95) 3px solid;
+}
+.heading{
+    margin: 0px;
+    padding: 0px;
+    color: aliceblue;
+    font-size: 250%;
+}
+.fa-free-code-camp{
+    margin-right: 8px;
+    color: rgb(233, 95, 95);
+    transition: 1s;
+}
+.fa-free-code-camp:hover{
+    color: black;
+}
+.playBox{
+    margin: 30px auto;
+    border-collapse: collapse;
+    border-radius: 20px;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    font-family: hobo std;
+    font-size: 500%;
+    color: rgb(32, 221, 221);
+    transition-duration: 2s;
+    transition-delay: inherit;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 100%;
+}
+#box1{
+    border-top: none;
+    border-left: none;
+}
+#box2{
+    border-top: none;
+}
+#box3{
+    border-top: none;
+    border-right: none;
+}
+#box4{
+    border-left: none;
+}
+#box6{
+    border-right: none;
+}
+#box7{
+    border-bottom: none;
+    border-left: none;
+}
+#box8{
+    border-bottom: none;
+}
+#box9{
+    border-bottom: none;
+    border-right: none;
+}
+.win{
+    margin: 10px auto;
+    width: 70%;
+    background: white;
+    border-radius: 50px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 20px 0px;
+    color: rgba(233, 122, 122, 0.911);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1s;
+}
+.footer{
+    margin: 40px 0px 0px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.692);
+    color: white;
+    font-size: 100%;
+    text-align: left;
+    border-top: 3px solid rgba(231, 110, 110, 0.781);
+}
+.fa-facebook-official{
+    float: right;
+    margin-right: 10px;
+    font-size: 300%;
+    color: rgb(36, 105, 255);
+    transition-duration: 0.7s;
+}
+.fa-facebook-official:hover{
+    color: rgb(56, 97, 185);
+    font-size: 200%;
+}
+.fa-twitter-square{
+    float: right;
+    margin-right: 10px;
+    color: #00aced;
+    transition-duration: 0.7s;
+}
+.fa-twitter-square:hover{
+    color: #00bbff;
+    font-size: 200%;
+}
+.fa-google-plus-square{
+    float: right;
+    margin-right: 10px;
+    color: #f76e5cc7;
+    transition-duration: 0.7s;
+}
+.fa-google-plus-square:hover{
+    color: #fc9182c7;
+    font-size: 200%;
+}
+.fa-trophy{
+    color: rgb(32, 221, 221);
+    margin-right: 10px;
+}
+.fa-frown-o{
+    margin-right: 10px;
+    color: rgb(32, 221, 221);
+    font-weight: bold;
+    font-size: 250%;
+}
+@media screen and (max-width: 600px) {
+    .box{
+        width: 90px;
+        height: 90px;
+        font-size: 300%;
+    }
+    .playBox{
+        width: 80%;
+    }
+    .heading{
+        font-size: 200%;
+    }
+    .win{
+        width: 90%;
+        font-size: 170%;
+    } 
+    .footer{
+        font-size: 70%;
+        padding: 20px;
+    }
+}
