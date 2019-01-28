@@ -1,0 +1,182 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 0px 10px 0px;
+    width: 25%;
+    background-color: #353b48;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.side{
+    margin-left:25%;
+    padding:1px 14px;
+    background-color: #353b48;
+}
+.logo{
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+}
+ .btns{
+    display: block;
+    width: 80%;
+    margin: 3px auto;
+}
+.btns:nth-child(odd){
+    background-color: #353b48;
+    border-color: #808e9b;
+    color: white;
+} 
+#news{
+    padding: 10px 20px;
+    background-color: #1595AA;
+    border-radius: 10px;
+    margin: 15px auto 15px;
+    color: white;
+    font-size: 180%;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    width: 97%;
+}
+.box{
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+.img{
+    border-radius: 15px;
+    margin: 5px auto;
+    width: 100%;
+}
+.description{
+    font-size: 110%;
+    margin: 10px;
+}
+.more{
+    color: rgb(247, 119, 119);
+}
+.descH{
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #353b48;
+    width: 40%;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 100%;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 140%;
+    padding: 10px;
+    margin: 10px auto;
+    width: 100%;
+}
+#rNav,#rNavSide{
+    display: none;
+}
+#date{
+    float: right;
+    font-size: 90%;
+    color: rgb(102, 208, 224);
+}
+.comas{
+    margin: 10px auto;
+    color: #1595AA;
+    font-size: 180%;
+}
+#Wlogo{
+    text-align: center;
+    margin: 10px auto 15px;
+    color: white;
+    border-bottom: 1px solid rgb(247, 119, 119);
+    padding: 0px 0px 5px;
+}
+.footer{
+    text-align: center;
+    margin: 10px auto;
+    color: rgba(206, 200, 200, 0.623);
+    letter-spacing: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media only screen and (max-width: 600px) {
+   #news{
+       font-size: 90%;
+       width: 100%;
+   }
+   #date{
+       font-size: 70%;
+       color: rgb(102, 208, 224);
+   }
+   #rNav{
+        display: block;
+        padding: 10px 20px;
+        font-size: 150%;
+   }
+   #rNavSide{
+       display: block;
+       width: 0;
+       height: 100%;
+       position: fixed;
+       background-color: #353b48;
+       top: 0;
+       left: 0;
+       z-index: 1;
+       transition: 0.7s;
+       overflow: hidden;
+       text-align: center;
+   }
+   #nav2{
+       padding: 10px 0px;
+   }
+   #Rlogo,.bars{
+       display: inline-block;
+       font-size: 130%;
+       cursor: pointer;
+   }
+   .bars{
+       margin: 5px auto;
+       float: right;
+   }
+   .bars:active{
+       color: #1595AA;
+   }
+   .side{
+       margin: 0px;
+   }
+   #navW{
+       display: none;
+   }
+   .title{
+       font-size: 120%;
+   }
+   .descH{
+       width: 80%;
+    }
+    .description{
+        font-size: 100%;
+    }
+    .comas{
+        font-size: 150%;
+    }
+    .box{
+        width: 100%;
+        margin:0px auto 10px;
+    }
+    .footer{
+        font-size: 85%;
+        letter-spacing: 1px;
+    }
+}

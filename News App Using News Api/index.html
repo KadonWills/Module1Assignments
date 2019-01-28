@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>getNews</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./icon/icon.png">
+    <link rel="manifest" href="mf.json">
+</head>
+
+<body>
+    <div id="top"></div>
+    <div class="nav" id="navW" onmouseover="document.getElementById('navW').style.overflow = 'auto'" onmouseout="document.getElementById('navW').style.overflow = 'hidden'">
+        <h1 id="Wlogo" title="Logo">get<span style="color:rgb(255, 111, 111); font-size:130%; font-family:hobo std">N</span>ews<span style="color:rgb(241, 144, 144); font-size:50%; font-weight:bold"><sup>&reg;</sup></span>
+        </h1>
+        <div id="nav">
+        </div>
+    </div>
+    <div id="rNav">
+        <h1 id="Rlogo" title="Logo">get<span style="color:rgb(255, 111, 111); font-size:130%; font-family:hobo std">N</span>ews<span style="color:rgb(241, 144, 144); font-size:70%; font-weight:bold"><sup>&reg;</sup></span>
+        </h1>
+        <h1 class="bars" title="Nav" onclick="showNav();" id="navBtn">
+            <i class="fa fa-bars"></i>
+        </h1>
+    </div>
+    <div id="rNavSide">
+        <div id="nav2">
+
+        </div>
+    </div>
+    <div class="side">
+        <div id="news">
+            <span id="khabar"></span>
+            <span id="date"></span>
+        </div>
+        <div id="a"></div>
+        <p id="auth"></p>
+        <div class="footer">
+            <p>@Copyrights.2018-19 All Rights Reserved!</p>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
