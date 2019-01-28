@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    
+        <div class="heading"><p>Calculator</p></div>
+        <div class="container">
+        <!-- <div class="display"></div> -->
+        <form class="mainForm" name="forms">
+        <p class="subHeading"><i class="fa fa-bolt"></i></p>
+        <!-- <br />  -->
+        <div class="content">   
+        <input type="text" name="answer" id="display" onfocus="this.style.backgroundColor='white'" onblur="this.style.backgroundColor=this.style.backgroundColor='rgba(46, 233, 247, 0.966)'; color:'black'">
+            <hr />
+            <input type="button" value="1" id="a1" onclick="forms.answer.value += '1'" >
+            <input type="button" value="2" id="a2" onclick="forms.answer.value += '2'">
+            <input type="button" value="3" id="a3" onclick="forms.answer.value += '3'">
+            <input type="button" value="+" id="aPlus" onclick="forms.answer.value += '+'">
+            <br />
+            <input type="button" value="4" id="a4" onclick="forms.answer.value += '4'">
+            <input type="button" value="5" id="a5" onclick="forms.answer.value += '5'">
+            <input type="button" value="6" id="a6" onclick="forms.answer.value += '6'">
+            <input type="button" value="-" id="aMinus" onclick="forms.answer.value += '-'">
+            <br />
+            <input type="button" value="7" id="a7" onclick="forms.answer.value += '7'">
+            <input type="button" value="8" id="a8" onclick="forms.answer.value += '8'">
+            <input type="button" value="9" id="a9" onclick="forms.answer.value += '9'">
+            <input type="button" value="/" id="aDivide" onclick="forms.answer.value += '/'">
+            <br />
+            <input type="button" value="." id="aDot" onclick="forms.answer.value += '.'">
+            <input type="button" value="0" id="a0" onclick="forms.answer.value += '0'">
+            <input type="button" value="X" id="aMultiply"onclick="forms.answer.value += '*'">
+            <input type="button" value="=" id="aEqual" onClick="forms.answer.value = eval(forms.answer.value)">
+            <br />
+            <input type="button" value="Clear All" id="aC" onClick="forms.answer.value = ''">
+            <input type="button" value="Del" id="aDel"onclick="backSpace();">
+        </div>
+        </form>
+    </div>
+    <p class="footer">@COPYRIGHTS 2018-19. All Rights Reserved</p>
+    <script src="app.js"></script>
+</body>
+</html>
