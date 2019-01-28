@@ -1,0 +1,181 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald',Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgba(96, 172, 243, 0.486);
+}
+.header{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.842);
+    text-align: center;
+    padding: 20px;
+    margin: 0px auto 0px auto;
+    margin-top: 5px;
+    border-bottom: 3px solid rgba(231, 110, 110, 0.781)
+}
+.fa-codepen{
+    color: white;
+    margin-right: 7px;
+    transition: 1s;
+}
+.fa-codepen:hover{
+    color: rgba(231, 110, 110, 0.781);
+}
+.logo{
+    margin: 0px;
+    padding: 0px;
+    color: rgb(2, 161, 161);
+    font-size: 230%;
+    font-family: hobo std,'Oswald',Arial, Helvetica, sans-serif;
+}
+.subLogo{
+    margin: -4px 0px 0px;
+    padding: 0px;
+    font-size: 70%;
+    color:white;
+    margin-left:80px;
+}
+.gameHeading{
+    width: 60%;
+    margin: 20px auto 0px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0px 15px 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: rgba(0, 183, 255, 0.938);
+    box-shadow: 5px 5px 5px  #3a3a3a;
+    background-color: rgba(22, 21, 21, 0.788);
+}
+.fa-angle-double-down{
+    font-size: 100%;
+    color: rgba(236, 85, 85, 0.849);
+    margin-right: 8px;
+}
+.playBox{
+    width: 60%;
+    margin: 0px auto 10px auto;
+    border: 8px solid rgb(255, 255, 255);
+    padding: 20px;
+    background-color: black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 5px  #3a3a3a;
+    background-color: rgba(22, 21, 21, 0.788);
+}
+.box{
+    width: 150px;
+    height: 150px;
+    border: none;
+    background: none;
+    background-color: rgb(48, 164, 241);
+    font-size: 300%;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    transition-duration: 1s;
+    transition-property: all;
+    border: 2px solid aliceblue;
+}
+.box:hover{
+    background-color: rgba(22, 21, 21, 0.788);
+}
+.after{
+    width: 150px;
+    height: 150px;
+    border: none;
+    background: none;
+    font-size: 300%;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    transition-duration: 1s;
+    transition-property: all;
+}
+.fa-question-circle{
+    color: white;
+}
+.footer{
+    margin: 40px 0px 0px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.842);
+    color: white;
+    font-size: 100%;
+    text-align: left;
+    border-top: 3px solid rgba(231, 110, 110, 0.781);
+}
+.fa-facebook-official{
+    float: right;
+    margin-right: 10px;
+    font-size: 300%;
+    color: rgb(36, 105, 255);
+    transition-duration: 0.7s;
+}
+.fa-facebook-official:hover{
+    color: rgb(56, 97, 185);
+    font-size: 200%;
+}
+.fa-twitter-square{
+    float: right;
+    margin-right: 10px;
+    color: #00aced;
+    transition-duration: 0.7s;
+}
+.fa-twitter-square:hover{
+    color: #00bbff;
+    font-size: 200%;
+}
+.fa-google-plus-square{
+    float: right;
+    margin-right: 10px;
+    color: #f76e5cc7;
+    transition-duration: 0.7s;
+}
+.fa-google-plus-square:hover{
+    color: #fc9182c7;
+    font-size: 200%;
+}
+@media screen and (max-width: 790px) {
+    .gameHeading{
+        width: 90%;
+    }
+    .playBox {
+        width: 90%;
+    }
+    .box{
+        width: 120px;
+        height: 120px;
+    }
+    .after{
+        width: 120px;
+        height: 120px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .logo{
+        font-size: 200%;
+    }
+    .gameHeading{
+        width: 90%;
+    }
+    .playBox {
+        width: 90%;
+        padding: 10px;
+    }
+    .box{
+        width: 80px;
+        height: 80px;
+        font-size: 250%;
+    }
+    .after{
+        width: 80px;
+        height: 80px;
+        font-size: 250%;
+    }
+    .footer{
+        font-size: 70%;
+        padding: 10px;
+    }
+}
