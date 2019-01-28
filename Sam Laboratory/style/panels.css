@@ -1,0 +1,251 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins";
+}
+.nav{
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    background-color: #f1f5f8;
+    margin: 0px;
+    padding: 0px;
+    padding: 20px 5px;
+    text-align: center;
+}
+.nav h1{
+    margin: 0px auto;
+    padding: 10px;
+    font-size: 180%;
+    text-align: center;
+    cursor: pointer;
+}
+.navContent{   
+   width: 90%;
+    margin: 0px auto 150px auto;
+}
+.navContent p{
+    margin: 5px auto;
+    padding: 0px;
+}
+.navContent p button{
+    display: block;
+    margin: 5px auto;
+    width: 70%;
+}
+.contentPanel{
+    width: 70%;
+    margin-left:30%;
+    padding: 22px 15px;
+    border-radius: 10px;
+}
+
+.contentHead{
+    width: 100%;
+    padding: 10px;
+    /* background-color:#f8786a98; */
+    background-color: rgba(17, 17, 17, 0.767);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 120%;
+    cursor: pointer;
+}
+#donors,#acceptors, #myPost{
+    background-color: #f1f5f8;
+    padding: 10px;
+}
+.donorBox{
+    margin: 5px;
+    padding: 0px;
+    background-color: white;
+    width: 48%;
+    display: inline-block;
+    border-radius: 10px;
+}
+.postBox{
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+.typeBox{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(18, 165, 165);
+    font-family: 'Oswald';
+    color: white;
+    font-size: 130%;
+    text-align: center;
+    cursor: pointer;
+}
+.paddBox{
+    padding: 20px;
+    text-align: center;
+}
+.footer p{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgb(197, 193, 193);
+}
+.paddBox p{
+    margin: 5px auto; 
+    padding: 0px;
+}
+.bGroup{
+    font-size: 350%;
+    color:#e74c3c;
+    font-family: 'Oswald';
+    text-align: center;
+    margin: 0px auto;
+}
+.post{
+    color: rgba(19, 18, 18, 0.781);
+    font-size: 105%;
+    letter-spacing: 0.5px;
+    font-style: italic;
+}
+.oD{
+    font-size: 90%;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.dp{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0px auto 10px;
+}
+.dp img{
+    width: 150px;
+    height: 150px;
+}
+.name{
+    font-size: 120%;
+    margin-top: 5px;
+    text-align: center;
+    color:rgb(18, 165, 165);
+}
+.filter{
+    text-align: center;
+    padding: 10px;
+}
+.filter button {
+    width: 50px;
+    height: 50px;   
+    margin: 3px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+    cursor: pointer;
+}
+.null{
+    margin: 20px auto;
+    text-align: center;
+    color: red;
+    padding: 10px;
+}
+#guidance{
+    width:96%;
+    margin:0px auto; 
+    text-align:center
+}
+.header{
+    display: none;
+}
+.others{
+    width: 100%;
+    background-color: #e74c3c;
+    padding: 10px;
+    margin: 10px auto 0px;
+}
+.dltBtn{
+    width: 100%;
+}
+.totals{
+    width: 100%;
+    background-color: #f1f5f8;
+    margin: 10px auto;
+    padding: 10px;
+}
+.groupHead{
+    color: #e74c3c;
+    font-family: 'Oswald';
+    font-size: 120%;
+}
+@media only screen and (max-width: 900px){
+    .donorBox{
+        width: 100%;
+        margin:10px auto;
+    }
+    #donors,#acceptors, #myPost{
+        padding: 15px;
+    }
+    .header h1{
+        font-size: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .header{
+        margin: 0px;
+        padding: 10px 0px;      
+        width: 100%;
+        background-color: #f1f5f8;
+        display: block;
+    }
+    .header h1{
+        margin: 0px;
+        padding: 10px 0px 5px 15px;
+        font-size: 200%;
+        display: inline-block;
+    }
+    #navR{
+        padding: 20px;
+    }
+    #navR button{
+        margin: 5px auto 0px;
+        text-align: left;
+    }
+    .bR{
+        display: block;
+        display: inline-block;
+        float: right;
+        margin: 0px 15px 0px 0px;
+        padding: 0px;
+    }
+    #block{
+        display: none;
+    }
+    .contentPanel{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .contentHead {
+        margin-top: 3px;
+    }
+    .donorBox{
+        width: 100%;
+        margin:10px auto;
+    }
+    #donors,#acceptors, #myPost{
+        padding: 15px;
+    }
+    .header{
+        border-bottom: 2px solid rgb(18, 165, 165);
+    }
+    .header h1{
+        font-size: 130%;
+    }
+    #guidance{
+        width: 90%;
+    }
+    .filter button{
+        width: 50px;
+        height: 50px;
+    }
+    .footer p{
+        font-size: 80%;
+    }
+}

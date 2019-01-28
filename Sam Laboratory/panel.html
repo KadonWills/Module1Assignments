@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="shortcut icon" href="./images/sh.jpg">
+    <style>
+        body {
+            font-family: 'Poppins'
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainBox">
+        <div class="mainBox">
+            <div class="header">
+                <h1 title="Sam Laboratory">
+                    <i class="fa fa-medkit" style="color:rgb(18, 165, 165)"></i> sam
+                    <span style="color:#e74c3c;">laboratory</span>
+                </h1>
+                <p class="bR">
+                    <button class="btn btn-dark" data-toggle='collapse' data-target='#navR'>
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </p>
+                <div class="collapse" id="navR">
+                    <button class="btn btn-info btn-block" style="font-family:'Poppins';">
+                        <i class="fa fa-hospital-o" style="color:rgb(158, 241, 241);"></i> Lab</button>
+                    <button class="btn btn-info btn-block" data-toggle="modal" data-target="#donor">
+                        <i class="fa fa-plus-square" style="color:rgb(158, 241, 241);"></i> Donate</button>
+                    <button class="btn btn-info btn-block" data-toggle="modal" data-target="#acceptor">
+                        <i class="fa fa-heartbeat" style="color:rgb(158, 241, 241);"></i> Accept</button>
+                    <button class="btn btn-info btn-block" onclick="logout()">
+                        <i class="fa fa-sign-out" style="color:rgb(158, 241, 241);"></i> Logout</button>
+                </div>
+                <ul class="linkss">
+                    <li title="Laboratory" style="color:#e74c3c">
+                        <i class="fa fa-hospital-o"></i> Lab</li>
+                    <li title="Become a Donator" data-toggle="modal" data-target="#donor">
+                        <i class="fa fa-plus-square"></i> Donate</li>
+                    <li title="Become an Acceptor" data-toggle="modal" data-target="#acceptor">
+                        <i class="fa fa-heartbeat"></i> Accept</li>
+                    <li title="Logout" onclick="logout()">
+                        <i class="fa fa-sign-out"></i> Logout</li>
+
+                </ul>
+            </div>
+            <div class="head" title="Facilities">
+                <h1>
+                    <i class="fa fa-user-md"></i> Facilities</h1>
+            </div>
+            <div class="requireBtns">
+                <div class="donorBtn">
+                    <h2>
+                        <i class="fa fa-plus-square"></i>
+                    </h2>
+                    <h1 title="Become a Donor">Become a donor!</h1>
+                    <button class="btn btn-danger rBtns" data-toggle="modal" data-target="#donor" title="Get Started">Donate Blood!</button>
+                </div>
+                <div class="acceptorBtn">
+                    <h2>
+                        <i class="fa fa-heartbeat"></i>
+                    </h2>
+                    <h1 title="Become an Acceptor">Become an acceptor!</h1>
+                    <button class="btn btn-info rBtns" data-toggle="modal" data-target="#acceptor" title="Get Started"> Accept Blood!</button>
+                </div>
+            </div>
+            <div class="head" title="Candidates">
+                <h1>
+                    <i class="fa fa-user-circle-o"></i> Candidates</h1>
+            </div>
+            <div class="filter">
+                <div>
+                    <h1 title="Donors">Donors</h1>
+                    <p id="tDonors" title="Total Donors"></p>
+                </div>
+                <div>
+                    <h1 title="Acceptors">Acceptors</h1>
+                    <p id="tAcceptors" title="Total Acceptors"></p>
+                </div>
+                <div>
+                    <h1 title="Users">Users</h1>
+                    <p id="tUsers" title="Total Users"></p>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div class="modal fade" id="donor">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title" style="font-family:'Oswald'; letter-spacing:1px; margin:2px auto; color:#ff5722">Registration as a Donor!</h4>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="alert alert-danger" style="width:100%; text-align:justify" title="Note">
+                                <strong>Please Note!</strong> You can donate blood to acceptors if you create your post in the list
+                                of donors. acceptors will see your post and respond to you also you can direct donate to
+                                them by seeing them. But at one time you can't create two posts. For second post you will
+                                have to delete your previous post. If you register your account as a donor however , you
+                                will be able to change your account type whenever you want.
+                            </div>
+                            <div class="alert alert-info" style="width:100%; text-align:center" title="Get Started">
+                                Get Started!
+                            </div>
+                            <form action="JavaScript:void(0)" onsubmit="registerDonor()">
+                                <div class="form-group" style="margin:20px 0px 10px; color:#ff5722">
+                                    <label for="comment">Your Post :</label>
+                                    <textarea class="form-control" id="donorPost" title="Post" rows="5" id="" required></textarea>
+                                </div>
+                                <p style="font-size:90%; text-align:center" id="loaderDonor">
+                                    <i class="fa fa-spinner fa-spin" style="font-size:24px"></i> Please Wait..</p>
+
+                                <button class="btn btn-info" type="submit" style="width:100%;" title="Register">
+                                    <i class="fa fa-registered"></i> Register</button>
+                            </form>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal" style="width:100%;" title="Cancel">
+                                <i class="fa fa-close"></i> Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div class="modal fade" id="acceptor">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title" style="font-family:'Oswald'; letter-spacing:1px; margin:2px auto; color:#ff5722">Registration as an Acceptor!</h4>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="alert alert-danger" style="width:100%; text-align:justify" title="Note">
+                                <strong>Please Note!</strong> You can get blood from donors if you create your post donors will see
+                                and respond to you also you can get direct from them by seeing them. But at one time you
+                                can't create two posts. For second post you will have to delete your previous post. If you
+                                register your account as an Acceptor. Howeve, you will be able to change your account type
+                                whenever you want.
+                            </div>
+                            <div class="alert alert-info" style="width:100%; text-align:center" title="Get Started">
+                                Get Started!
+                            </div>
+                            <form action="JavaScript:void(0)" onsubmit="registerAcceptor()">
+                                <div class="form-group" style="margin:20px 0px 10px; color:#ff5722">
+                                    <label for="comment">Your Post :</label>
+                                    <textarea class="form-control" title="Post" id="acceptorPost" rows="5" id="" required></textarea>
+                                </div>
+                                <p style="font-size:90%; text-align:center" id="loaderAcceptor">
+                                    <i class="fa fa-spinner fa-spin" style="font-size:24px"></i> Please Wait..</p>
+                                <button class="btn btn-info" type="submit" style="width:100%;" title="Register">
+                                    <i class="fa fa-registered"></i> Register</button>
+                            </form>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" title="Cancel" data-dismiss="modal" style="width:100%;">
+                                <i class="fa fa-close"></i> Cancel</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer" title="Copyrights.2018-19">
+                <p>@Copyrights.2019-19. All Rights Reserved!</p>
+            </div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+        <script src="./script/panel.js"></script>
+        <script src="./script/sweetalert.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>

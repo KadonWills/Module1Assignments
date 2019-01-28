@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="shortcut icon" href="./images/sh.jpg">
+    <style>
+        body {
+            font-family: 'Poppins'
+        }
+    </style>
+</head>
+
+<body style="background-color:#f1f5f8">
+    <div class="mainBox">
+        <div class="header">
+            <h1 title="Sam Laboratory">
+                <i class="fa fa-medkit" style="color:rgb(18, 165, 165)"></i> sam
+                <span style="color:#e74c3c;">laboratory</span>
+            </h1>
+            <p class="bR">
+                <button class="btn btn-dark" data-toggle='collapse' data-target='#navR'>
+                    <i class="fa fa-bars"></i>
+                </button>
+            </p>
+            <div class="collapse" id="navR">
+                <a href="index.html" style="text-decoration:none;">
+                    <button class="btn btn-info btn-block" style="font-family:'Poppins';">
+                        <i class="fa fa-home" style="color:rgb(158, 241, 241);"></i> home</button>
+                </a>
+                <a href="aboutBlood.html" style="text-decoration:none;">
+                    <button class="btn btn-info btn-block">
+                        <i class="fa fa-heartbeat" style="color:rgb(158, 241, 241);"></i> about blood</button>
+                </a>
+                <a href="signup.html" style="text-decoration:none;">
+                    <button class="btn btn-info btn-block">
+                        <i class="fa fa-user-circle-o" style="color:rgb(158, 241, 241);"></i> sign up</button>
+                </a>
+                <button class="btn btn-info btn-block">
+                    <i class="fa fa-sign-in" style="color:rgb(158, 241, 241);"></i> log in</button>
+            </div>
+            <ul class="linkss">
+                <a href="index.html" style="text-decoration:none;">
+                    <li title="Home">
+                        <i class="fa fa-home"></i> HOME</li>
+                </a>
+                <a href="aboutBlood.html" style="text-decoration:none;">
+                    <li title="About Blood">
+                        <i class="fa fa-heartbeat"></i> ABOUT BLOOD</li>
+                </a>
+                <li title="Login" style="color:#e74c3c">
+                    <i class="fa fa-sign-in"></i> LOGIN</li>
+                <a href="signup.html" style="text-decoration:none;">
+                    <li title="Signup">
+                        <i class="fa fa-user-circle-o"></i> SIGNUP</li>
+                </a>
+            </ul>
+        </div>
+        <div class="formArea">
+            <p id="p2"></p>
+            <form action="JavaScript:void(0)" onsubmit="login();">
+                <div class="alert alert-info" style="text-align:center;width:100%; cursor:pointer;" title="Hurry Up!">
+                    <span>
+                        <i class="fa fa-heartbeat"></i>
+                    </span> Hurry Up!
+                </div>
+                <br />
+                <input type="email" class="input" placeholder="email" id="email" required title="Email">
+                <br/>
+                <input type="password" class="input" id="password" placeholder="password" required title="Password">
+                <br />
+                <button class="btn btn-info" style="width:100%; margin-top:5px;" type="submit" title="Log in">
+                    <i class="fa fa-sign-in"></i> LOG IN</button>
+            </form>
+            <p class="already" title="Don't have and account?">Don't have an account?
+                <a href="signup.html" title="Create Account"> Sign up!</a>
+            </p>
+            <p id="p"></p>
+        </div>
+        <div class="footer" title="Copyrights.2018-19">
+            <p>@Copyrights.2019-19. All Rights Reserved!</p>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+        <script src="./script/app.js"></script>
+        <script src="./script/sweetalert.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>

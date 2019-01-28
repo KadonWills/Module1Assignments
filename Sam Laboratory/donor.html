@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Donor</title>
+    <link rel="stylesheet" href="./style/panels.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="shortcut icon" href="./images/sh.jpg">
+    <style>
+        body {
+            font-family: 'Poppins'
+        }
+    </style>
+</head>
+
+<body>
+    <p style="font-size:90%; text-align:center; padding:20px;" id="loader">
+        <i class="fa fa-spinner fa-spin" style="font-size:24px"></i> Please Wait..</p>
+    <div class="mainBox" style="display:none" id="mainBox">
+
+        <div class="nav" id="block">
+            <h1 title="Sam Laboratory">
+                <i class="fa fa-medkit" style="color:rgb(18, 165, 165)"></i> sam
+                <span style="color:#e74c3c;">laboratory</span>
+            </h1>
+            <h1 style="display:block;">-----</h1>
+            <div class="navContent">
+                <p style="width:100px; height:100px; border-radius:50%; overflow:hidden; border:5px solid white; margin-bottom:5px;">
+                    <img id='profilePic' title="Profile" height="100px;" width="100px;">
+                </p>
+                <p style="color:rgb(18, 165, 165)" id="userName" title="Name"></p>
+                <p style="color:#e74c3c" id="userType" title="Type"></p>
+                <p style="margin-top:40px;">
+                    <a href="#acc" style="text-decoration:none">
+                        <button class="btn btn-info" title="Acceptors">
+                            <i class="fa fa-heartbeat"></i> Acceptors</button>
+                    </a>
+                    <a href="#bloodTotal" style="text-decoration:none">
+                        <button class="btn btn-info" title="Blood Filter">
+                            <i class="fa fa-filter"></i> Blood Filter</button>
+                    </a>
+                    <a href='#po' style="text-decoration:none">
+                        <button class="btn btn-info" title="My Post">
+                            <i class="fa fa-folder-open-o"></i> My Post</button>
+                    </a>
+                    <button class="btn btn-info" title="My Account" data-toggle="modal" title="My Account" data-target="#myProfile">
+                        <i class="fa fa-user-circle-o"></i> My Account</button>
+                    <button class="btn btn-info" title="Logout" onclick="logout()">
+                        <i class="fa fa-sign-out"></i> Logout</button>
+                </p>
+            </div>
+        </div>
+        <div class="header">
+            <h1 title="Sam Laboratory">
+                <i class="fa fa-medkit" style="color:rgb(18, 165, 165)"></i> sam
+                <span style="color:#e74c3c;">laboratory</span>
+            </h1>
+            <p class="bR">
+                <button class="btn btn-dark" data-toggle='collapse' data-target='#navR'>
+                    <i class="fa fa-bars"></i>
+                </button>
+            </p>
+            <div class="collapse" id="navR">
+                <a href="#acc" style="text-decoration:none;">
+                    <button class="btn btn-info btn-block" style="font-family:'Poppins';">
+                        <i class="fa fa-heartbeat" style="color:rgb(158, 241, 241);"></i> Acceptors</button>
+                </a>
+                <a href="#bloodTotal" style="text-decoration:none;">
+                    <button class="btn btn-info btn-block" style="font-family:'Poppins';">
+                        <i class="fa fa-filter" style="color:rgb(158, 241, 241);"></i> Blood Filter</button>
+                </a>
+                <a href="#po" style="text-decoration:none;">
+                    <button class="btn btn-info btn-block">
+                        <i class="fa fa-folder-open-o" style="color:rgb(158, 241, 241);"></i> My Post</button>
+                </a>
+
+                <button class="btn btn-info btn-block" data-toggle="modal" title="My Account" data-target="#myProfile">
+                    <i class="fa fa-user-circle-o" style="color:rgb(158, 241, 241);"></i> My Account</button>
+                <button class="btn btn-info btn-block" onclick="logout()">
+                    <i class="fa fa-sign-out" style="color:rgb(158, 241, 241);"></i> Logout</button>
+
+            </div>
+        </div>
+        <div class="contentPanel">
+            <div style="background-color:#f1f5f8; margin-bottom:10px">
+                <p class="contentHead" id="bloodTotal" title="Blood Filter">
+                    <i class="fa fa-filter"></i> Blood Filter
+                </p>
+                <div id="totals">
+
+                </div>
+
+                <p class="contentHead" id="acc" title="Acceptors">
+                    <i class='fa fa-heartbeat'></i> Acceptors</p>
+                <div class="alert alert-danger" id="guidance" title="Attention" style="width:96%; margin:0px auto; text-align:center">
+
+                </div>
+                <div id="acceptors">
+
+                </div>
+
+                <div class="filter" id="filter">
+                    <a href="#acc" style="text-decoration:none;">
+                        <button class="btn btn-danger" onclick="filter('default')" title="All Donors">ALL</button>
+                    </a>
+                    <a href="#acc" style="text-decoration:none;">
+                        <button class="btn btn-danger" onclick="filter('A+')" title="A+">A+</button>
+                    </a>
+                    <a href="#acc" style="text-decoration:none;">
+                        <button class="btn btn-danger" onclick="filter('A-')" title="A-">A-</button>
+                    </a>
+                    <a href="#acc" style="text-decoration:none;">
+                        <button class="btn btn-danger" onclick="filter('B+')" title="B+">B+</button>
+                    </a>
+                    <a href="#acc" style="text-decoration:none;">
+                        <button class="btn btn-danger" onclick="filter('B-')" title="B-">B-</button>
+                    </a>
+                    <a href="#acc" style="text-decoration:none;">
+                        <button class="btn btn-danger" onclick="filter('O+')" title="O+">O+</button>
+                    </a>
+                    <a href="#acc" style="text-decoration:none;">
+                        <button class="btn btn-danger" onclick="filter('O-')" title="O-">O-</button>
+                    </a>
+                    <a href="#acc" style="text-decoration:none;">
+                        <button class="btn btn-danger" onclick="filter('AB+')" title="AB+">AB+</button>
+                    </a>
+                    <a href="#acc" style="text-decoration:none;">
+                        <button class="btn btn-danger" onclick="filter('AB-')" title="AB-">AB-</button>
+                    </a>
+
+                </div>
+            </div>
+
+            <p class="contentHead" id="po" title="My Post">
+                <i class='fa fa-folder-open-o'></i> My Post</p>
+            <div id="myPost">
+
+            </div>
+            <div class="footer" title="Copyrights.2018-19">
+                <p>@Copyrights.2019-19. All Rights Reserved!</p>
+            </div>
+            <!-- The Modal -->
+            <div class="modal fade" id="edit">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title" style="font-family:'Oswald'; letter-spacing:1px; margin:2px auto; color:#ff5722">Edit Your Post!</h4>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form action="JavaScript:void(0)" onsubmit="editPost()">
+                                <div class="form-group" style="margin:20px 0px 10px; color:#ff5722">
+                                    <label for="comment">Your Post :</label>
+                                    <textarea class="form-control" title="Post" id="acceptorPost" rows="5" id="" required></textarea>
+                                </div>
+                                <p style="font-size:90%; display:none" id="loaderAcceptor">
+                                    <i class="fa fa-spinner fa-spin" style="font-size:24px"></i> Please Wait..</p>
+                                <button class="btn btn-info" title="Edit" type="submit" style="width:100%;">
+                                    <i class="fa fa-edit"></i> Edit</button>
+                            </form>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" title="Cancel" class="btn btn-danger" data-dismiss="modal" style="width:100%;">
+                                <i class="fa fa-close"></i> Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myProfile" style="margin:0px auto;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" style="color:#38b3ae">My Profile!</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" style="text-align:center;" id="profile">
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" title="Close" class="btn btn-danger" data-dismiss="modal" style="width:100%;">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+        <script src="./script/donor.js"></script>
+        <script src="./script/sweetalert.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
