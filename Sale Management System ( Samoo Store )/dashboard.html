@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="stylesheetforpanles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color:#2E3136">
+    <div class="header" style="text-align:center;">
+        <h1 class="head" title="SamooStore"><i class="fa fa-renren"></i> samoo<span class="halfHead">Store<sup style="font-size:40%; color: white;">&reg</sup>
+            </span>
+        </h1>
+    </div>
+    <div style="text-align:center; margin:20px auto;"><button class="productsBtn" onclick="location = 'adminpanel.html'"><i class="fa fa-arrow-left"></i> PRODUCTS</button></div>
+    <div class="saleOfTheDayTable" id="saleTable">
+        <h1 class="saleDay">
+            <i class="fa fa-shopping-cart"></i> SALE OF THE DAY</h1>
+            <p style="text-align:center; margin:0px; padding:0px; color:aliceblue;"><i class="fa fa-arrow-down"></i></p>
+        <table class="table" id="Table">
+            <tr class="headerOfSaleTable">
+                <th class="dateH">DATE</th>
+                <th class="proH">PRODUCT</th>
+                <th class="qH">QUANTITY</th>
+                <th class="pH">T.PRICE</th>
+            </tr>
+        </table>
+        <p style="color:#454955; text-align:center"><i class="fa fa-minus-circle"></i></p>
+        <p id="some" style="margin-bottom:0px;">NOTHING SOLD</p>
+    </div>
+    <div style="background-color:#454955; height:5px;"> </div>
+    <br />
+    <div class="totalSale">
+        <h1><i class="fa fa-check" style="color:aliceblue;"></i> TOTAL SALE</h1>
+        <p id="saleTotal">00</p>
+    </div>
+    <br />
+    <div style="background-color:#454955; height:5px;"> </div>
+    <br />
+    <div id="dashBoard">
+        <h1 class="stockHeading">STOCK-LEFT <br /> <i class="fa fa-arrow-down"></i></h1>
+        <div class="dashArea">
+            <div class="footwearsStock">
+        
+            </div>
+            <div class="clothesStock">
+             
+            </div>
+            <div class="watchesStock">
+             
+            </div>
+        </div>
+        <p style="text-align:center;"><button class="fsBtn">FOOTWEARS</button><button class="csBtn">CLOTHES</button><button class="wsBtn">WATCHES</button></p>
+    </div>
+        <div class="footer">
+            <p class="footerr" style="border-top:6px solid #454955; margin-top:20px;">@COPYRIGHTS-2018-19. All Rights Reserved.</p><a href="#top">
+        </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

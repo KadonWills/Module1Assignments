@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Samoo Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="head" title="SamooStore">
+                <i class="fa fa-renren"></i> samoo<span class="halfHead">Store<sup style="font-size:40%; color: white;">&reg</sup>
+                </span>
+            </h1>
+            <button class="logInBtnNavBar" title="Log in" onclick="showSide();">
+                <i class="fa fa-sign-in" aria-hidden="true"> </i> LOG IN
+            </button>
+        </div>
+        <div id="loginArea" class="area">
+            <a href="javascript:void(0)" title="Close" class="closebtn" onclick="closeSide()">&times;</a>
+            <button class="panelBtn" title="Login On Admin Panel" onclick="a();">Admin Panel</button>
+            <br />
+            <button class="panelBtn" title="Login On Employee Panel" onclick="e();">Employee Panel</button>
+        </div>
+        <div class="adminPanelLogin" id="adminLogin">
+            <a href="javascript:void(0)" title="Close" class="closebtn" onclick="closeSideOfAdminLogin()">&times;</a>
+            <h1 class="headd" title="SamooStore">
+                <i class="fa fa-renren"></i> samoo<span class="halfHead">Store<sup style="font-size:40%; color: white;">&reg</sup>
+                </span>
+            </h1>
+            <p class="panels">ADMIN PANEL</p>
+            <i class="fa fa-angle-double-down"></i>
+            <div class="signUpForm">
+                <p class="signUpHeading">LOG IN</p>
+                <p id="error2">You have entered a wrong email or password!</p>
+                <form action="JavaScript:void(0)" onsubmit="adminLogin();">
+                    <label class="text">Email
+                        <br />
+                        <input type="email" class="input" placeholder="Email..." required="required" id="emailM" onfocus="this.className += ' inputfocus'"
+                            onblur="this.className='input'">
+                    </label>
+                    <br />
+                    <label class="text">Password
+                        <br />
+                        <input type="password" class="input" placeholder="Password..." required="required" id="passwordM" onfocus="this.className += ' inputfocus'"
+                            onblur="this.className='input'">
+                    </label>
+                    <br />
+                    <input type="submit" value="LOG IN" class="submitBtn">
+                </form>
+        
+                <div id="display1">
+                    <i class="fa fa-spinner"></i> Logging in...</div>
+            </div>
+        </div>
+
+        <div class="employeePanelLogin" id="employeeLogin">
+            <a href="javascript:void(0)" title="Close" class="closebtn" onclick="closeSideOfEmployeeLogin()">&times;</a>
+            <h1 class="headd" title="SamooStore">
+                <i class="fa fa-renren"></i> samoo<span class="halfHead">Store<sup style="font-size:40%; color: white;">&reg</sup>
+                </span>
+            </h1>
+            <p class="panels">EMPLOYEE PANEL</p>
+            <i class="fa fa-angle-double-down"></i>
+            <div class="signUpForm">
+                <p class="signUpHeading">SIGN UP</p>
+                <form action="JavaScript:void(0)" onsubmit="signUpEmployee();">
+                    <label class="text">Full Name
+                        <br />
+                        <input type="text" class="input" placeholder="Full Name..." required="required" id="fullName" onfocus="this.className += ' inputfocus'"
+                            onblur="this.className='input'">
+                    </label>
+                    <br />
+                    <label class="text">Email
+                        <br />
+                        <input type="email" class="input" placeholder="Email..." required="required" id="email" onfocus="this.className += ' inputfocus'"
+                            onblur="this.className='input'">
+                    </label>
+                    <br />
+                    <label class="text">Password
+                        <br />
+                        <input type="password" class="input" placeholder="Password..." required="required" id="password" onfocus="this.className += ' inputfocus'"
+                            onblur="this.className='input'">
+                    </label>
+                    <br />
+                    <label class="agreement">
+                        <input type="checkbox" required="required"> Accept the terms and polices.</label>
+                    <br />
+                    <input type="submit" value="SIGN UP" class="submitBtn">
+                </form>
+                <div id="display">
+                    <i class="fa fa-spinner"></i> Signing up...</div>
+                <hr / style="width:70%; opacity:0.5; size:0.5px">
+                <p class="acc">Already have an account?</p>
+                <button class="loginbtn" onclick="setInterval(function(){location = 'employelogin.html'},'1000')">LOG IN</button>
+            </div>
+        </div>
+        <div class="intro">
+            <h1 class="welcomeHead" id="a">samooStore!</h1>
+            <p class="welcomeSubHead">We are leading marketing store in Pakistan.</p>
+            <a href="#knowMore"><button class="subScribeBtn"><i class="fa fa-angle-double-down" style="color:#454955"></i> KNOW MORE!</button></a>
+        </div>
+        <div class="abot" id="about">
+            <div id="knowMore"class="img" title="SamooStore"><img src="ab.jpg" width="150px;" height="150px;"></div>
+            <h1 class="samoohead" title="SamooStore">samooStore</h1>
+            <p class="bio"><span class="coma">❝</span> We are leading marketing store in pakistan.Our store was first opened in 4 June 1997. We have all types of products which a store should have. Name of Our CEO/FONDER is Mr. Sammad Ali. Rating given by our customers to us is 9.5/10<span class="coma"> ❞</span> </p>
+        </div>
+        <div class="footer">
+            <p class="footerr">@COPYRIGHTS-2018-19. All Rights Reserved.</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="sweetalert2.js"></script>
+</body>
+
+</html>

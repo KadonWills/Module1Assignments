@@ -1,0 +1,448 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    margin: 0px;
+    padding: 20px;
+    background-color: #2E3136;
+    border-bottom: 3px solid rgb(87, 206, 87);
+}
+.head{
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    color: aliceblue;
+    display: inline-block;
+}
+.headd{
+    cursor: pointer;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+    color: aliceblue;
+    display: inline-block;
+    margin-bottom:20px;
+}
+.halfHead{
+    color: rgb(87, 206, 87);
+}
+.fa-renren{
+    color: rgb(87, 206, 87);
+}
+.logInBtnNavBar{
+    float: right;
+    margin: 0px 0px;
+    border: none;
+    background: none;
+    background-color: rgb(56, 164, 231);
+    color: white;
+    padding: 9px;
+    font-size: 120%;
+    letter-spacing: 1px;
+    outline: none;
+    border-radius: 10px;
+    transition: 0.7s;
+    cursor: pointer;
+    width: 15%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logInBtnNavBar:hover{
+    background-color: #454955;
+}
+.area{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: #2E3136;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+.adminPanelLogin{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: #2E3136;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+.employeePanelLogin{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: #2E3136;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+    transition: 0.7s;
+}
+.closebtn:hover{
+    color: rgb(87, 206, 87);
+}
+.displaySide{
+    width: 200px;
+}
+.displaySidee{
+    width: 100%;
+}
+.panels{
+    color: rgb(87, 206, 87);
+    font-size: 120%;
+    margin: 0px;
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px auto;
+    background-color: #353842;
+}
+.fa-angle-double-down{
+    color: aliceblue;
+    font-size: 110%;
+    margin-bottom: 5px;
+}
+.panelBtn{
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    background-color: #2E3136;
+    border: 1px solid rgb(87, 206, 87);
+    padding: 12px;
+    margin: 5px;
+    width: 80%;
+    font-size: 110%;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+.panelBtn:hover{
+    background-color: rgb(87, 206, 87);
+}
+.intro{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.abot{
+    padding-top: 10px;
+    width: 100%;
+    background-color: #454955;
+    border-top: 3px solid rgb(87, 206, 87);
+    text-align: center;
+    color: white;
+}
+.img{
+    width: 150px;
+    height:150px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px auto;
+    overflow: hidden;
+    border: 4px solid white;
+    cursor: pointer;
+}
+.bio{
+    margin: 0px;
+    padding: 20px;
+    margin: 0px auto;
+}
+.welcomeHead{
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 320%;
+    color: rgb(56, 164, 231);
+    height: 60px;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.7s;
+}
+.welcomeSubHead{
+    text-align: center;
+    margin: 0px;
+    color: rgb(87, 206, 87);
+    letter-spacing: 1px;
+}
+.subScribeBtn{
+    background: none;
+    border: none;
+    border: 2px solid rgb(87, 206, 87);
+    font-size: 120%;
+    border-radius: 15px;
+    padding: 10px;
+    padding-top: 12px;
+    color: #454955;
+    outline: none;
+    transition: 1s;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.subScribeBtn:hover{
+    background-color: rgb(87, 206, 87);
+    color: white;
+}
+.coma{
+    color: rgb(87, 206, 87);
+    font-size: 150%;
+}
+.samoohead{
+    width: 40%;
+    margin: 20px auto 10px;
+    padding: 10px;
+    background-color: #353842;
+    border-radius: 10px;
+    cursor: pointer;
+}
+form{
+    text-align:left;
+    margin: 0px;
+    padding: 2px 20px 2px 15px;
+}
+.signUpForm{
+    width: 40%;
+    margin: 0px auto;
+    background-color: #22252A;
+    border-radius: 8px;
+}
+.signUpHeading{
+    margin-top: 0px;
+    background-color: #454955;
+    padding: 10px;
+    color: #82858E;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    font-size: 150%;
+}
+.text{
+    color: #82858E;
+    font-size: 80%;
+}
+.input{
+    background: none;
+    border: none;
+    background-color: #454955;
+    padding: 10px;
+    margin: 8px auto;
+    width: 97%;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    transition: 1s;
+}
+.input::placeholder{
+    color: #82858E;
+}
+.inputfocus{
+    background-color: #454955;
+    border: none;
+    border-bottom: 1px solid rgb(255, 196, 0);
+    transition: 0.5s;
+}
+.inputfocus::placeholder{
+    color: #454955;
+}
+.agreement{
+    color: #828282;
+    font-size: 80%;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.submitBtn {
+    background: none;
+    border: none;
+    background-color: rgb(56, 164, 231);
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 30%;
+    transition: 1s;
+    cursor: pointer;
+}
+.submitBtn:hover {
+    background-color: #454955;
+}
+.acc{
+    color: #828282;
+    font-size: 80%;
+}
+.acc:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.loginbtn{
+    padding: 10px;
+    width: 90%;
+    margin: 0px auto 20px; 
+    background: none;
+    border: none;
+    background-color: rgb(56, 164, 231);
+    color: white;
+    border-radius: 5px;
+    transition: 1s;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    outline: none;
+}
+.loginbtn:hover{
+    background-color: #454955;
+}
+.error{
+    float: right;
+    color: rgb(231, 96, 96);
+    display: none;
+    cursor: pointer;
+}
+.error:hover{
+    text-decoration: underline;
+}
+#display,#display1{
+    color: rgb(255, 174, 0);
+    letter-spacing: 1px;
+    display: none;
+}
+#display1{
+    margin-bottom: 50px;
+    padding: 20px;
+}
+#error2{
+    background-color: rgb(250, 125, 125);
+    width: 80%;
+    padding: 10px;
+    margin: 5px auto 10px;
+    border-radius: 10px;
+    color: rgb(102, 5, 5);
+    display: none;
+}
+.chota{
+    font-size: 50%;
+    color: rgb(56, 164, 231);
+}
+.heading1{
+    color: 	#82858E;
+    font-size: 250%;
+    margin: 20px auto 5px;
+    letter-spacing: 1px;
+    background-color: #22252A;
+    width: 80%;
+    padding: 15px;
+    border-radius: 10px;
+}
+.panelHeading{
+    color: rgb(87, 206, 87);
+    margin: 0px;
+    padding: 10px;
+    border: 1px solid aliceblue;
+    width: 30%;
+    margin: 0px auto;
+}
+.footerr{
+    border-top: 3px solid rgb(87, 206, 87);
+    padding: 20px;
+    text-align: center;
+    margin: 0px;
+    color: rgb(189, 185, 185);
+}
+@media only screen and (max-width: 600px) {
+    .signUpForm{
+        width: 90%;
+    }
+    .submitBtn{
+        width: 40%;
+    }
+    .heading1{
+        width: 80%;
+        font-size: 150%;
+    }
+    .heading2{
+        font-size: 120%;
+    }
+    .input{
+        width: 95%;
+    }
+    .acc{
+        font-size: 70%;
+    }
+    .panels{
+        width: 60%;
+    }
+    #error2{
+        font-size: 85%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .header{
+        font-size: 80%;
+    }
+    .logInBtnNavBar{
+        width: 25%;
+        font-size: 100%;
+    }
+    .welcomeSubHead{
+        font-size: 70%;
+    }
+    .samoohead{
+        width: 70%;
+    }
+    .bio{
+        font-size: 90%;
+    }
+    .coma{
+        font-size: 110%;
+    }
+    .employeePanelLogin{
+        padding-top: 20px;
+    }
+    .headd{
+        margin-bottom: 10px;
+        padding: 0px;
+    }
+    .footer{
+        font-size: 95%;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .head{
+        font-size: 190%;;
+    }
+    .logInBtnNavBar{
+        font-size: 100%;
+        width: 28%;
+    }
+    .headd{
+        font-size: 120%;
+    }
+    .footer{
+        font-size: 70%;
+    }
+    
+}
