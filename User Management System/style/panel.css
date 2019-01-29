@@ -1,0 +1,324 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sideBar{
+    width: 30%;
+    margin: 0px;
+    padding: 10px auto;
+    background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+    position: fixed;
+    height: 100%;
+}
+.home{
+    width: 100%;
+    margin: 30px auto;
+    padding: 10px 10px;
+}
+.home p{
+    text-align: center;
+}
+.home p button{
+    width: 70%;
+}
+#top{
+    overflow: hidden;
+    width: 50%;
+    transition: 0.5s;
+    height: 5px;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+#bottom{
+    overflow: hidden;
+    width: 50%;
+    transition: 0.5s;
+    height:5px;
+    background-color: white;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+#co{
+    font-size: 260%;
+    margin: 0px;
+    padding: 0px;
+    width: 60%;
+    transition: 0.5s;
+    overflow: hidden;
+    margin: 10px auto;
+    text-align: left;
+    color: rgba(223, 92, 92, 0.781);
+}
+.btns{
+    margin: 0px;
+    padding: 0px;
+}
+.content{
+    width: 70%;
+    height: 100%;
+    margin: 0px 0px 0px 30%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+}
+#account{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+.account{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+#userName{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+#usertype{
+    margin: 0px;
+    padding: 0px;
+    color: rgba(223, 92, 92, 0.781);
+}
+#contentNav,.contentNav{
+    background-color: rgba(223, 92, 92, 0.781);
+    width: 90%;
+    margin: 8px auto 0px;
+    padding: 10px;
+    color: white;
+    font-size: 160%;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10px;
+}
+.usersDiv{
+    display: inline-block;
+    width: 28%;
+    background-color: white;
+    border-radius: 10px;
+    color: rgb(109, 41, 41);
+    font-size: 130%;
+    margin: 25px auto 20px auto;
+    margin-left: 5px;
+}
+.usersDiv p{
+    margin: 2px;
+    padding: 5px;
+}
+#profileContent,.profileContent{
+    margin: 20px 5%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#userNameOnOverView,.userNameOverView{
+    color: rgb(109, 41, 41);;
+    margin: 8px 0px 2px;
+    font-size: 140%;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+#userBioOverView,.userBioOverView{
+    color: rgba(17, 17, 17, 0.767);
+    padding: 5px;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+tr{
+    color: rgb(109, 41, 41);
+    transition: 0.7s;
+    cursor: pointer;
+}
+tr:hover{
+    background-color: white;
+    color: black;
+}
+.copyrights{
+    text-align: center;
+    color: rgb(175, 174, 174);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    padding: 0px;
+}
+#error{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    display: none;
+}
+#mainBox{
+    margin: 0px;
+    padding: 0px;
+}
+#rDiv{
+    margin: 0px auto;
+    width: 100%;
+    padding: 10px;
+    color: rgba(8, 8, 8, 0.747);
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.tR,.gR,.eR{
+    border: none;
+    background: none;
+    outline: none;
+    background-color: #b8daff;
+    padding: 10px;
+    width: 33.3%;
+}
+.gR{
+    background-color: #f5c6cb;
+    width: 33.3%;
+}
+.eR{
+    background-color: #bee5eb;
+    width: 33.3%;
+}
+.sideBarR{
+    display: none;
+}
+.fsBtn,.wsBtn,.csBtn{
+    border: none;
+    background: none;
+    margin: 5px auto;
+    width: 30%;
+    padding: 10px;
+    color: rgba(8, 8, 8, 0.747);
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.fsBtn{
+    background-color: #93c4f8;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.wsBtn{
+    background-color: #9fe2ec;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.csBtn{
+    background-color: #f7a5ad;
+}
+.loader{
+    text-align: center;
+    color: rgba(223, 92, 92, 0.781);
+    display: none;
+}
+.loaderLoad{
+    margin-top: 15px;
+    text-align: center;
+    color: rgba(223, 92, 92, 0.781);
+}
+@media only screen and (max-width:830px){
+    #userDetailsBtn button,.userDetailsBtn button{ 
+        width: 80%;
+        display: block;
+        margin: 4px auto;
+    }
+    #topR,#bottomR{
+        width: 30%;
+    }
+    #coR{
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .sideBar {
+      display: none;
+    }
+    .sideBarR{
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+        padding: 10px;
+        background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+        display: block;
+        border-bottom: 3px solid #38b3ae;
+    }
+    #topR, #bottomR{
+        width: 30%;
+        height: 3px;
+        background-color: white;
+        margin: 0px;
+        padding: 0px;
+    }
+    #bottomR{
+        margin-left: 20%;
+    }
+    #coR{
+        font-size: 170%;
+        margin: 0px;
+        padding: 0px;
+        width: 40%;
+        margin: 10px;
+        text-align: center;
+        color: rgba(223, 92, 92, 0.781);
+    }
+    .logs{
+        width: 70%;
+        display: inline-block;
+    }
+    .btnsR{
+        display: inline-block;
+        float: right;
+        padding: 0px 10px 0px 0px;
+    }
+    .btnsR button{
+        background:none;
+        border: none;
+        color: white;
+        font-size: 150%;
+        margin-top: 8px;
+        outline: none;
+    }
+    .btnsR button:active{
+        outline: none;
+        color: #38b3ae;
+    }
+    #rNav{
+        text-align: center;
+    }
+    #rNav button{
+        width: 50%;
+    }
+    #rDiv{
+        font-size: 90%;
+        letter-spacing: 0px;
+    }
+    .content{
+        width: 100%;
+        margin: 0px;
+    }
+    #userDetailsBtn,.userDetailsBtn{
+        text-align: center;
+    }
+    #userDetailsBtn button,.userDetailsBtn button{ 
+        width: 80%;
+        display: block;
+        margin: 4px auto;
+    }
+    .fsBtn,.wsBtn,.csBtn{
+        width: 33.3%;
+        font-size: 80%;
+    }
+    .usersDiv{
+        display: block;
+        width: 80%;
+        margin:20px auto;
+    }
+    .usersDiv p{
+        margin: 10px auto;
+    }
+    .copyrights{
+        font-size: 80%;
+    }
+}

@@ -1,0 +1,210 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bg{
+    margin: 0px;
+    padding: 0px;
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+    display:inline-block;
+}
+.home{
+    width: 100%;
+    margin: 30px auto;
+    padding: 10px auto;
+}
+.home #top{
+    overflow: hidden;
+    width: 0;
+    transition: 0.5s;
+    height: 5px;
+    background-color: white;
+    margin: 10px;
+}
+#topR{
+    overflow: hidden;
+    width: 0;
+    transition: 0.5s;
+    height: 5px;
+    background-color: white;
+    margin: 0px;
+}
+.home #bottom{
+    overflow: hidden;
+    width: 0;
+    transition: 0.5s;
+    height:5px;
+    background-color: white;
+    float: right;
+    margin: 10px;
+}
+#bottomR{
+    overflow: hidden;
+    width: 0;
+    transition: 0.5s;
+    height:5px;
+    background-color: white;
+    float: right;
+    margin: 0px;
+}
+.home #co{
+    font-size: 280%;
+    margin: 0px;
+    padding: 0px;
+    width: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    margin: 40px auto 30px;
+    text-align: left;
+    color: rgba(223, 92, 92, 0.781);;
+}
+#coR{
+    font-size: 300%;
+    margin: 0px;
+    padding: 0px;
+    width: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    margin: 40px auto 30px;
+    text-align: left;
+    color: rgba(223, 92, 92, 0.781);
+}
+.form{
+    display: inline-block;
+    margin: 0px;
+    margin-left: 40%;
+    position: fixed;
+    height: 100%;
+    width: 60%;
+    overflow: auto;
+}
+.getS{
+    text-align: center;
+    margin: 20px auto 0px;
+    font-size: 130%;
+    width: 60%;
+}
+.formArea{
+  margin: 50px auto;
+  padding: 10px 20px;
+}
+.bgR{
+    margin: 0px;
+    padding: 50px 10px 30px;
+    background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+    display: none;
+    width: 100%;
+}
+.bio{
+    width: 80%;
+    margin: 5px auto;
+    border: 2px solid rgb(83, 127, 146);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+.bio h1{
+    text-align: center;
+    margin: 10px;
+    padding: 0px;
+    color: #38b3ae;
+    font-size: 150%;
+    transition: 0.5s;
+}
+.bio p{
+    color: white;
+    text-align: justify;
+    font-size: 90%;
+}
+.loader{
+    text-align: center;
+    color: rgba(223, 92, 92, 0.781);
+    display: none;
+}
+.copyrights{
+    text-align: center;
+    color: rgb(175, 174, 174);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    padding: 0px;
+}
+@media only screen and (max-width:770px){
+    .bg{
+        display: none;
+       }
+    .form{
+           width: 100%;
+           height: auto;
+           margin: 0px;
+           position: relative;
+       }
+       .formArea{
+           margin: 25px auto;
+       }
+    .bgR{
+           display: block;
+       }
+    #coR{
+        font-size: 400%;
+       }
+       .getS{
+           width: 80%;
+       }
+       .bio{
+           width: 90%;
+           overflow: hidden;
+           transition: 0.5s;
+           margin: 0px auto;
+       }
+       .barBtn{
+        margin: 10px auto 0px;
+        text-align: center;
+       }
+       .barBtn button{
+           width: 90%; 
+           /* background-color: #38b3ae; */
+       }
+       .copyrights{
+           font-size: 80%;
+       }
+}
+@media only screen and (max-width:680px) {
+    .bg{
+     display: none;
+    }
+    .form{
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        position: relative;
+    }
+    .bgR{
+        display: block;
+    }
+}
+@media only screen and (max-width:600px) {
+    .bg{
+     display: none;
+    }
+    .form{
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        position: relative;
+    }
+    .bgR{
+        display: block;
+    }
+}
+@media only screen and (max-width:550px) {
+    #coR{
+        font-size: 250%;
+    }
+}
+
+
+  

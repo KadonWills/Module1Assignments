@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dDrive</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="home">
+            <h1 id="top"></h1>
+            <h1 id="co">dDrive<sup style="font-size:40%; color:white">&reg;</sup>
+            </h1>
+            <h1 id='bottom'></h1>
+        </div>
+        <br />
+            <div class="bio">
+                <h1>About Us!</h1>
+                <p>Welcome to dDrive,The world's largest professional network with more than 1 Million users in more than 3 countries and territories worldwide.</p>
+                <hr />
+                <h1>Who are we?</h1>
+                <p>We are dDrive. dDrive was began in Sammad ali's drawing room in 2015 and was officially launched on July 6, 2016. Sammad ali is the CEO f dDrive.</p>
+                <hr />
+                <h1>Our Mission!</h1>
+                <p>
+                    Connect the world’s professionals to make them more productive and successful.
+                </p>
+            </div>
+    </div>
+    <div class="bgR">
+        <div>
+            <h1 id="topR"></h1>
+            <h1 id="coR">dDrive<sup style="font-size:40%; color:white">&reg;</sup>
+            </h1>
+            <h1 id='bottomR'></h1>
+            </div>
+            <br />
+            <p class="barBtn"><button class="btn btn-info" data-toggle="collapse" data-target="#bioShow"><i class="fa fa-bars"></i></button></p>
+            <br />
+            <div class="collapse bio" id="bioShow">
+                    <h1>About Us!</h1>
+                    <p>Welcome to dDrive,The world's largest professional network with more than 1 Million users in more than 3 countries and territories worldwide.</p>
+                    <hr />
+                    <h1>Who are we?</h1>
+                    <p>We are dDrive. dDrive was began in Sammad ali's drawing room in 2015 and was officially launched on July 6, 2016. Sammad ali is the CEO f dDrive.</p>
+                    <hr />
+                    <h1>Our Mission!</h1>
+                    <p>
+                        connect the world’s professionals to make them more productive and successful.
+                    </p>
+                </div>
+        </div>
+    <div class="form">
+        <div class="formArea">
+            <div class="signupBtn">
+                <button class="btn btn-danger" style="width:100%; padding:15px; font-size:150%; letter-spacing:1px; border-top-left-radius:20px; border-top-right-radius:20px;"
+                data-toggle="collapse" data-target="#signupForm" id="signupToggle">
+                    <i class="fa fa-user-circle-o" style="color:rgba(245, 151, 151, 0.945)"></i> SIGN UP</button>
+            </div>
+            <div id="signupForm" class="collapse">
+                    <div class="alert alert-info getS">
+                        <strong>Get Started!</strong> It's Free.
+                    </div>
+                <form action="JavaScript:void(0)" style="padding:5px 15px 15px 15px;" onsubmit="signup();">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Full Name" id="fname" required="required">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email" id="email" required="required">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" id="password" required="required">
+                    </div>
+                    <div style="margin-bottom:5px; text-align:right; display:none" id="passerror">
+                        <small class="text-danger">
+                            Password Should Contain at least 8 characters!.
+                        </small>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" id="radio1" name="gender" value="male" checked>Male
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" id="radio2" name="gender" value="female">Female
+                        </label>
+                    </div>
+                    <div class="form-group" style="margin-top:10px;">
+                        <input class="form-control" type="text" placeholder="User Account!" readonly>
+                    </div>
+                    <div class="form-group">
+
+                        <textarea class="form-control" id="comment" rows="3" required="required" onfocus="this.value=''">Your Bio (Optional)</textarea>
+                    </div>
+                    <p id="loader" class="loader"><i class="fa fa-refresh fa-spin" style="font-size:24px"></i> Creating..</p>
+                    <button class="btn btn-info" style="width:100%;"><i class="fa fa-user-circle-o" ></i> Create Account!</button>
+                </form>
+            </div>
+            <div class="loginBtn">
+                <button class="btn btn-dark" style="width:100%; padding:15px; font-size:150%; background-color:#133a49; letter-spacing:1px; border-bottom-left-radius:20px; border-bottom-right-radius:20px;"
+                data-toggle="collapse" data-target="#loginForm" id="loginToggle">
+                    <i class="fa fa-sign-in" style="color:#2c647a"></i> SIGN IN</button>
+            </div>
+            <div id="loginForm" class="collapse">
+                    <div class="alert alert-info getS">
+                            <strong>For!</strong> Admin and User.
+                        </div>
+                    <form action="JavaScript:void(0)" style="padding:15px;" onsubmit="login()">
+                        <div class="form-group">
+                            <input type="email" id='Lemail' class="form-control" placeholder="Email" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="Lpass" class="form-control" placeholder="Password" required="required">
+                        </div>
+                        <p id="loaderlogin" class="loader"><i class="fa fa-refresh fa-spin" style="font-size:24px"></i> Signing in..</p>
+                        <button class="btn btn-info" style="width:100%;"><i class="fa fa-sign-in"></i> Log in</button>
+                    </form>
+                </div>
+                <p class="copyrights">@Copyrights.2018-19. All Rights Reserved.</p>
+        </div>
+    </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script src="./script/app.js"></script>
+    <script src="./script/sweetalert2.js"></script>
+</body>
+
+</html>
