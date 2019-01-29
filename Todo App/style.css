@@ -1,0 +1,212 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgb(253, 246, 246) */
+}
+*{
+  box-sizing: border-box;
+}
+.header{
+    margin: 0px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-color: #557a95;
+    padding: 20px 0px;
+    border-bottom: 3px solid rgba(245, 143, 143, 0.877);
+}
+.mainHeading{
+    margin: 0px;
+    padding: 0px;
+    font-size: 250%;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
+.fa-list{
+    margin: 5px;
+    font-size: 90%;
+    color: rgba(253, 99, 99, 0.808)
+}
+.fa-list:hover{
+    color: rgba(79, 161, 255, 0.932);
+    transition: 1s;
+}
+.underDiv{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.text{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 90%;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background:none;
+    font-size: 100%;
+    font-size: 120%;
+    padding: 20px;
+    color: rgba(27, 27, 27, 0.925);
+    transition: 1s;
+    background-color: #719fc0;
+    border: 1px solid black;
+}
+.text::placeholder{
+    color: rgb(255, 255, 255);
+    font-size: 80%;
+}
+.addButton , .removeButton{
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 8px;
+    width: 30%;
+    outline: none;
+    background: none;
+    border: none;
+    background-color: rgba(228, 86, 86, 0.89);
+    border-radius: 10px;
+    font-size: 90%;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.removeButton{
+    background-color: rgba(79, 161, 255, 0.767);
+}
+.addButton:hover{
+    background-color: rgba(255, 140, 140, 0.925);
+    transition: 0.7s;
+    color: black;
+}
+.removeButton:hover{
+    background-color: rgba(27, 125, 238, 0.767);
+    transition: 0.7s;
+    color: black;
+}
+
+.fa-remove,.fa-plus{
+    display: block;
+    color: white;
+    font-size: 180%;
+}
+.fa-trash{
+    float: right;
+    font-size: 120%;
+    color: black;
+}
+.fa-trash:hover{
+    color: rgba(202, 202, 202, 0.692);
+    transition: 0.7s;
+    font-size: 130%;
+}
+.ul{
+    width: 80%;
+    padding: 0px;
+    list-style: none;
+    margin: 20px auto 10px auto;
+    text-align: left;
+}
+.li{
+    margin: 3px;
+    background-color: rgba(79, 161, 255, 0.932);
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 110%;
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+.li:nth-child(even){
+    background-color: rgba(255, 140, 140, 0.925);
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+.li:hover{
+    background-color:#557a95;
+}	
+.fa-check-square-o{
+    margin-right: 10px;
+    margin-top: 2px;
+    color: rgb(36, 33, 33);
+    font-size: 120%;
+}
+.fa-check-square-o:hover{
+    color: rgba(245, 143, 143, 0.877);
+    transition: 0.5s;
+}
+.checked{
+    text-decoration: line-through;
+    text-decoration-color: rgb(255, 0, 0);
+    margin: 3px;
+
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: black;
+    font-size: 120%;
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+#checkedFont{
+    color:  black;
+}
+.fa-square{
+    margin-right: 10px;
+    color: white;
+}
+.fa-arrow-circle-down{
+    font-size: 270%;
+    margin: 0px;
+    margin-top: 15px;
+    color: #557a95;
+    border-top: 2px solid black;
+    padding-top: 5px; 
+}
+.fa-arrow-circle-down:hover{
+    color:rgba(79, 161, 255, 0.767);
+    transition: 0.8s;
+}
+
+@media screen and (max-width: 600px) {
+    .addButton , .removeButton{
+        font-size: 60%;
+        padding: 5px;
+        width: 25%;
+    }
+    .subHeading{
+        width: 62%;
+        font-size: 80%;
+    }
+    .mainHeading{
+        font-size: 200%;
+    }
+    .fa-arrow-circle-down{
+        font-size: 200%;
+    }
+  }
+  .black{
+      border: none;
+      border-bottom: black solid 3px;
+      border-radius: 0px;
+      transition: 1s;
+      background-color: white;
+      
+  }
+  .black::placeholder{
+      color: white;
+  }
+  .fa-edit{
+      padding-top: 2px;
+      float: right;
+      font-size: 115%;
+      margin-left: 15px;
+      color: rgba(0, 0, 0, 0.747);
+      transition: 0.7s;
+  }
+  .fa-edit:hover{
+      color: rgba(202, 202, 202, 0.692);
+      font-size: 120%
+  }
