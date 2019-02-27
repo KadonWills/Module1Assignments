@@ -1,0 +1,208 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins';
+    
+}
+.head,.headBackHome{
+    padding: 15px;
+    background-color: #e0e8f7;
+    border-radius: 0px 0px 50px 50px;
+    margin: 20px auto;
+    cursor: pointer;
+    width: 90%;
+    text-align: center;
+}
+.headBackHome{
+    border-radius: 50px 50px 0px 0px;
+}
+.headBackHome button{
+    width: 80%;
+    padding: 12px;
+    border: none;
+    background: none;
+    outline: none;
+    background-color: rgb(26, 212, 212);
+    border-radius: 20px;
+    font-size: 100%;
+    font-family: 'Oswald';
+    color: rgb(11, 77, 77);
+    cursor: pointer;
+    transition: 0.7s;
+}
+.headBackHome button:hover{
+    background-color: rgb(18, 165, 165);
+}
+.logo{
+    font-family: 'Oswald';
+    color:#15a4fa;
+    font-size: 250%;
+    margin: 0px 80px 0px 0px;
+    padding: 0px;
+}
+
+.B{
+    color: #e45c75;
+}
+.homeContainer{
+    margin: 10px auto;
+    padding: 20px;
+    width: 70%;
+}
+.content{
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+.form{
+    background-color: white;
+    padding: 0px;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+}
+form{
+    margin: 0px;
+    padding: 20px;
+}
+.adminAccess{
+    margin: 3px auto;;
+    border-top: 2px solid white;
+    padding: 8px;
+    font-family: 'Poppins';
+    color: #551f29;
+    font-size: 110%;
+    width: 40%;
+}
+.form input{
+    display: block;
+    margin: 5px auto;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 20px;
+    width: 80%;
+    background-color: #e0e8f7;
+    font-family: 'Poppins';
+    border-radius: 10px;
+    color: #6a7ca3;
+    font-size: 90%;
+    transition: 0.7s;
+}
+.form input:hover{
+    background-color:#bccae5 
+}
+.form input::placeholder{
+    color: #6a7ca3
+}
+.form button{
+    display: block;
+    margin: 0px auto;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 86%;
+    background-color: #5cb85c;
+    font-family: 'Poppins';
+    border-radius: 10px;
+    color:white;
+    font-family: 'Poppins';
+    font-size: 100%;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.form button:hover{
+    background-color: #429242;
+}
+#loader{
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px;
+    display: none;
+}
+.line{
+    margin: 0px;
+    padding: 0px;
+    height: 8px;
+    background-color: #15a4fa;
+    width: 100%;
+}
+.hr{
+    padding: 0.8px;
+    background-color: #3e4960;
+    width: 86%;
+    margin: 10px auto;
+}
+#error{
+    color:red; 
+    float:right; 
+    font-size: 80%;
+    display: none;
+}
+.p{
+    display: block;
+    width: 86%;
+    margin: 10px auto;
+    text-align: left;
+    color: #15a4fa
+}
+.comment{
+    width: 84%;
+    outline: none;
+    font-size: 100%;
+    background-color: #e0e8f7;
+    border: none;
+    border-radius: 10px;
+    color: #6a7ca3;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+.already{
+    text-align: center;
+    margin: 20px auto 15px;
+    font-size: 90%;
+    cursor: pointer;
+}
+.already a, .already a:hover{
+    color: #15a4fa;
+    text-decoration-color: #15a4fa;
+}
+@media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 650px) {
+        .homeContainer{
+            width: 90%;
+            margin-top: 5px;
+        }
+        .homeContainer button {
+            width: 90%;
+        }
+        .form{
+            width: 100%;
+        }
+        .head{
+            padding: 15px;
+        }
+        .headBackHome button{
+            width:90%;
+        }
+        .logo{
+            margin: 0px;
+            font-size: 200%;
+        }
+        .logoSub{
+            margin: 0px;
+            font-size: 65%;
+        }
+        .footer{
+            font-size: 70%;
+        }
+        #error{
+            font-size: 70%;
+        }
+        .adminAccess{
+            width: 80%;
+        }
+      } 
+}

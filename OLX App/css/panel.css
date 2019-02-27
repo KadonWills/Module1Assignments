@@ -1,0 +1,899 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.navR{
+    width: 100%;
+    background-color: #333c4e;
+    margin: 0px;
+    padding: 0px;
+    padding: 20px;
+    display: none;
+}
+#location2{
+    margin: 0px;
+    color: #61c3ff;
+    font-family: 'Oswald';
+    margin-top: 4px;
+    width: 40%;
+    display: none;
+}
+#rNav{
+    width: 0;
+    background-color: #333c4e;
+    top: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+#rNav button{
+    width: 90%;
+}
+.closeNav{
+    margin: 20px auto;
+    padding-right: 15px;
+    text-align: right;
+    font-size: 200%;
+    color: white;
+}
+.sideNav{
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    margin: 0px;
+    text-align: center;
+    overflow: hidden;
+    background-color: #333c4e;
+}
+.logo,.logoR{
+    font-family: 'Oswald';
+    color:#15a4fa;
+    font-size: 220%;
+    margin: 5px auto 10px;
+    padding: 10px 0px;;
+    width: 100%;
+    text-align: center;
+}
+.logoR{
+    margin: 0px;
+    padding: 0px;
+    font-size: 160%;
+    text-align: left
+}
+.B{
+    color: #e45c75;
+}
+.navBtns, .navBtnsHome{
+    padding: 20px;
+}
+.navBtns button,.logout{
+    width: 90%;
+    margin: 5px auto;
+    display: block;
+    padding: 10px;
+}
+.sideContent{
+    margin: 0px;
+    margin-left: 25%;
+    width: 75%;
+}
+#infoPanel{
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fa7c6e;
+}
+#content{
+    width: 100%;
+    padding: 20px;
+    background-color: #E8F0F9;
+}
+#info{
+    background-color:#e0e8f7;
+    padding: 10px;
+    color: #15a4fa;
+    position: sticky;
+    top: 0;
+}
+.dashboard{
+    width: 90%;
+    margin: 20px auto;
+    padding: 0px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+}
+.line{
+    margin: 0px;
+    padding: 0px;
+    height: 8px;
+    background-color: #15a4fa;
+    width: 100%;
+}
+.dashboardBtns{
+    padding: 30px;
+}
+.dashboardBtns button{
+    margin: 5px auto;
+    display: block;
+    width: 60%;
+    padding: 30px;
+}
+.adForm{
+    width: 80%;
+    padding: 20px;
+    margin: 10px auto;
+}
+.formArea{
+    width: 70%;
+    margin: 10px auto;
+    padding:15px 25px;
+    background-color: white;
+    border-radius: 20px;
+}
+form{
+    margin: 10px auto;
+}
+.input{
+    display:block;
+    height: 60px;
+    width:100%;
+    margin:0 auto;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid rgba(24, 23, 23, 0.897);
+    transition: 0.5s;
+}
+.input:hover{
+    color:#ff5722;
+    border-bottom:1px solid #ff5722;
+}
+.input::placeholder{
+    color:#ff5722;
+    position:relative;
+    -webkit-transform:translateY(-20px);
+    transform:translateY(-20px);
+}
+.Btype{
+    color:#ff5722;
+    margin: 20px 0px;
+}
+.formArea button{
+    padding: 10px;
+}
+#loader,#loader1{
+    margin: 10px auto;
+    text-align: center;
+    display: none;
+}
+.modal-header h4{
+    text-align: center;
+    font-family:'Oswald';
+    color: #fa7c6e;
+    margin: 2px auto;
+} 
+.modal-body{
+    text-align: center;
+}
+#p{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    margin: 5px auto 0px;
+}
+#p div img{
+    height: 100px;
+    width: 100px;
+}
+#n{
+  margin: 0px auto 5px;
+  font-size: 120%;
+  color: #551f29;
+}
+#ema, #add,.adMaY{
+      width: 60%;
+      background-color: #e0e8f7;
+      color: #15a4fa;
+      font-size: 90%;
+      margin: 3px auto;
+      border-radius: 12px;
+      padding: 10px;
+}
+.tp{
+    padding: 3px;
+    color: #551f29;
+    font-family: 'Oswald';
+}
+#pic{
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.question{
+    margin: 0px;
+    padding: 20px;
+    color: #e45c75;
+    border-bottom: 2px solid #e0e8f7;
+    display: flex;
+    justify-content: space-between;
+}
+.myAds{
+    padding: 20px;
+    text-align: center;
+}
+.myAds .adImg img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px auto 0px auto;;
+    padding: 0px;
+}
+.myAds .adImg img{
+    width: 140px;
+    height: 140px;
+}
+.myAds p button{
+    width: 40%;
+}
+.adName{
+    margin: 0px auto 10px auto;
+    padding: 0px;
+    font-size: 120%;
+    color: #551f29;
+}
+.adDescription{
+    font-size: 90%;
+    padding: 10px;
+}
+.adDescription i{
+    color: #fa7c6e;
+}
+.upperNav{
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+}
+.searchArea{
+    width: 48%;
+}
+.searchArea input{
+    width: 90%;
+    display: inline-block;
+    padding: 5px;
+}
+#location{
+    margin-top: 14px;
+    font-family: 'Oswald';
+    color: #15a4fa;
+    font-size:110%;
+}
+.searchArea button{
+    padding: 5px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.bb button{
+    margin: 0px 5px;
+}
+.c{
+    margin: 4px auto;
+    border: 0.5 solid white;
+    background-color: #e45c75;
+    text-align: center
+}
+.navBtnsHome button{
+    width: 90%;
+    padding: 15px;
+    color: white;
+}
+.navBtnsHome p{
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    background-color: #333c4e;
+    cursor: pointer;
+    color: rgb(18, 165, 165);
+}
+.cBtns button{
+    margin: 3px auto;
+}
+.cateBar{
+    width: 86%;
+    padding: 30px;
+    margin:5px auto;
+    font-size: 140%;
+    color: rgb(18, 165, 165);
+    border-bottom: 4px solid #E8F0F9;
+    font-family: 'Oswald';
+    display: flex;
+    justify-content: space-between;
+}
+.wallpaper{
+    width: 100%;
+    height: 370px;
+}
+.wallpaper img{
+    width: 100%;
+    height: 370px;
+}
+.popularC{
+    padding: 20px;
+    width: 90%;
+    margin: 0px auto;
+    border-bottom: 2px solid #e0e8f7;
+    text-align: center;
+}
+.popularC div{
+    background-color: #e0e8f7;
+    padding: 30px;
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.7s;
+    font-size: 180%;
+    color: #551f29;
+    font-family: 'Oswald';
+    display: inline-block;
+    margin: 6px;
+    color: #5d6f91;
+}
+.popularC div:hover{
+    background-color: #c7d7f7;
+}
+#ads{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0px auto;
+}
+.productBox{
+    width: 30%;
+    padding: 10px;
+    border: 1px solid rgb(209, 202, 202);
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins";
+    margin: 5px auto;
+}
+.pPic{
+    text-align: center;
+    height: 160px;
+    width: 160px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+.productBox .pPic img{
+    height: 160px;
+    width: 160px;
+}
+.productBox .pPrice{
+    font-family: 'Oswald';
+    font-size: 120%;
+    color: #e45c75;
+    margin: 5px 0px 0px 0px;
+}
+.productBox .pName{
+    font-family: 'Poppins';
+    font-size: 100%;
+    margin: 5px 0px 0px 0px;
+    color: rgb(67, 74, 82);
+    background-color: #E8F0F9;
+    padding: 10px;
+}
+#pic,.pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#name{
+    display: flex;
+    align-items: center;
+}
+.dashboardBtns button{
+    text-align: center;
+      margin: 5px auto;
+      font-family: 'Oswald';
+      transition: 0.7s;
+      cursor: pointer;
+}
+.dashboardBtns .resultsAll , .dashboardBtns .pA , .dashboardBtns .mC{
+    width: 96%;
+    margin: 2px auto;
+    background: none;
+    border: none;
+    outline: none;
+    background-color: #e45c75;
+    color: #551f29;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 120%;
+}
+.dashboardBtns .resultsAll:hover{
+  background-color: #ff8a9f
+}
+.row{
+    margin: 0px;
+    text-align: center;
+}
+.row button{
+  width: 48%;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: #5cb85c;
+  color: white;
+  font-size: 120%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.row button{
+    display: inline-block;
+}
+  .row .pA{
+    background-color: #15a4fa;
+    color: #0c5380;
+  }
+  .row .pA:hover{
+      background-color: #61c3ff;
+  }
+  .row .mC{
+      background-color: #5cb85c;
+      color: #1d581d;
+  }
+  .row .mC:hover{
+      background-color: #8ff58f
+  }
+  .bbr {
+      display: none;
+      text-align: center;
+      margin:0px 0px 14px 0px;
+  }
+  .bbr button{
+      width: 44%;
+  }
+  .footer{
+      margin: 0px;
+      margin-top: 10px;
+      width: 100%;
+      background-color: rgb(18, 165, 165);
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-family: "Oswald";
+      font-size: 80%;
+    }
+.pDetails{
+    width: 96%;
+    border: 1px solid #e0e8f7;
+    padding: 20px;
+}
+.userDetails{
+    width: 100%;
+    border: 2px solid #e0e8f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.userDetails div{
+    width: 100%;
+}
+.uDp{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.uDp img{
+    width: 60px;
+    height: 60px;
+}
+.productDetails{
+    width: 100%;
+    margin: 20px auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
+.productDetails .pPi{
+    width: 50%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.productDetails .pDe{
+    width: 48%;
+    margin: 0px;
+    padding: 0px;
+    border-left: 2px solid #e45c75;
+}
+.productDetails .pDe .n{
+    color: rgb(18, 165, 165);
+    font-size: 110%;
+    font-family: 'Oswald';
+}
+.productDetails .pDe .l{
+    margin: 0px;
+    width: 60%;
+    padding: 2px;
+    background-color: #15a4fa;
+}
+.productDetails .pDe .ds{
+    margin: 10px 0px 10px 0px;
+    font-family: 'Poppins';
+    font-size: 90%;
+    color: rgba(22, 22, 22, 0.856);
+    font-weight: bold;
+}
+.productDetails .pDe .pri{
+    font-family: 'Oswald';
+    font-size: 100%;
+    color: #e45c75;
+    margin: 0px;
+}
+.productDetails .pDe .mod{
+    color: #551f29;
+    margin: 2px;
+}
+.productDetails .pDe .loca{
+    margin: 5px 0px 0px 0px;
+    color: rgba(22, 22, 22, 0.856);
+    font-family: 'Poppins';
+    font-size: 80%;
+    letter-spacing: 1px;
+}
+.pDe div{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logHead{
+    text-align: left;
+    font-size: 120%;
+    font-weight: bold;
+}
+.logHeadSub{
+    text-align: left;
+    font-size: 80%;
+    color: rgba(43, 42, 42, 0.856);
+}
+.formMessage{
+    margin: 0px;
+    padding: 20px;
+}
+.formMessage input{
+    display: block;
+    margin: 5px auto;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 20px;
+    width: 80%;
+    background-color: #e0e8f7;
+    font-family: 'Poppins';
+    border-radius: 10px;
+    color: #6a7ca3;
+    font-size: 90%;
+    transition: 0.7s;
+}
+.formMessage input:hover{
+    background-color:#bccae5 
+}
+.formMessage input::placeholder{
+    color: #6a7ca3
+}
+.formMessage button{
+    display: block;
+    margin: 0px auto;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 86%;
+    background-color: #5cb85c;
+    font-family: 'Poppins';
+    border-radius: 10px;
+    color:white;
+    font-family: 'Poppins';
+    font-size: 100%;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.formMessage button:hover{
+    background-color: #429242;
+}
+#loader{
+    text-align: center;
+      margin: 10px auto;
+      padding: 5px;
+      display: none;
+}
+.line{
+    margin: 0px;
+    padding: 0px;
+    height: 8px;
+    background-color: #15a4fa;
+    width: 100%;
+}
+.hr{
+    padding: 0.8px;
+    background-color: #3e4960;
+    width: 86%;
+    margin: 10px auto;
+}
+.already{
+    text-align: center;
+    margin: 20px auto 15px;
+    font-size: 90%;
+    cursor: pointer;
+}
+.already a, .already a:hover{
+    color: #15a4fa;
+    text-decoration-color: #15a4fa;
+}
+.chats{
+    margin: 10px auto;
+    padding: 20px;
+}
+.chats .noChats{
+    font-family: 'Oswald';
+    font-size: 110%;
+    text-align: center;
+    color: #551f29;
+}
+.chatBox{
+    padding: 20px;
+}
+.chatHeader{
+    width: 100%;
+    padding: 10px;
+    background-color: #61c3ff;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px 20px 0px 0px;
+}
+#c{
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+    height: 400px;
+    overflow: auto;
+    background-color: #E8F0F9;
+}
+.chatFooter{
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(254, 254, 255);
+    padding: 10px 5px;
+}
+.chatFooter input{
+    width: 70%;
+}
+.chatFooter button{
+    width: 30%;
+}
+.senderMsg{
+    margin: 3px 0px;
+    width: 80%;
+    height: auto;
+    background-color: #5cb9f38a;
+    color: #0c5380;
+    padding: 10px;
+    float: left;
+    border-radius: 20px;
+    font-size: 90%;
+}
+.myMsg{
+    margin: 3px 0px;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    color: #435f7a;
+    padding: 10px;
+    float: right;
+    border-radius: 20px;
+    font-size: 90%; 
+}
+.chatFooter input{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    width: 90%;
+    border: 1px solid #e0e8f7;
+}
+.chatFooter button{
+    border: none;
+    background: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(18, 165, 165);
+    color: white;
+}
+.Userdp{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.chatHeader p {
+    margin: 5px;
+    font-family: 'Oswald';
+    font-size: 130%;
+    color: #0a4061;
+}
+.backButton{
+    cursor: pointer;
+}
+#wait{
+    text-align: center;
+    margin: 20px auto;
+    display: none;
+}
+@media only screen and (max-width: 930px) {
+    .pPic{
+        height: 120px;
+        width: 120px;
+    }
+    .productBox .pPic img{
+        width: 120px;
+        height: 120px;
+    }
+    .productDetails .pPi{
+        width:50%;
+    }
+    .productDetails .pDe{
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .sideNav{
+        display: none;
+    }
+    .sideContent{
+        margin: 0px;
+        width: 100%;
+    }
+    .pPic{
+        width: 220px;
+        height: 220px;
+    }
+    .productBox .pPic img{
+        width: 220px;
+        height: 220px;
+    }
+    .dashboard{
+        width: 100%;
+    }
+    .dashboardBtns button{
+        padding: 10px;
+        width: 90%;
+    }
+    .formArea{
+        width: 100%;
+    }
+    .navR{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #info{
+        text-align: center;
+    }
+    .upperNav{
+        justify-content: space-between;
+    }
+    .searchArea{
+        width: 96%;
+        text-align: center;
+        margin: 0px auto;
+    }
+    .bb{
+        display: none;
+    }
+    .bbr{
+        display: block;
+    }
+    .navBtnsHome{
+        text-align: center;
+    }
+    .cateBar{
+        width: 100%;
+    }
+    #ads{
+        width: 100%;
+        display: block;
+    }
+    .productBox{
+        width: 90%;
+    }
+    .popularC{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .popularC div{
+        width: 90%;
+    }
+    #location{
+        display: none;
+    }
+    #location2{
+        display: block;
+    }
+    .wallpaper{
+        height: 200px;
+    }
+    .wallpaper img{
+        height: 200px;
+    }
+    .adForm{
+        width: 100%;
+        padding: 5px 10px;
+    }
+    .formArea{
+        width: 100%;
+    }
+    .tog{
+        width: 90%;
+    }
+    .pDetails{
+        width: 100%;
+    }
+    .productDetails{
+        flex-wrap: wrap;
+    }
+    .productDetails .pPi{
+        width: 100%;
+    }
+    .productDetails .pPi img{
+        width: 100%;
+    }
+    .productDetails .pDe{
+        width: 100%;
+    }
+    .userDetails button{
+        font-size: 65%;
+    }
+    .myAds button{
+        width: 80%;
+    }
+  }

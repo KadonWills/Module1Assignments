@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopify</title>
+    <link rel="stylesheet" href="./fonts/oswald.css">
+    <link rel="stylesheet" href="./fonts/poppins.css">
+    <link rel="stylesheet" href="./css/panel.css"> 
+    <link rel="stylesheet" href="./css/animate.css"> 
+    <link rel="shortcut icon" href="./icon/icon.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="./bootstrap/bootsrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <style>
+        body{
+            font-family: 'Poppins';
+        }
+    </style>
+</head>
+<body>
+    
+    <div class='main'>
+        <div class='sideNav' onmouseover="this.style.overflow='auto'" onmouseout="this.style.overflow = 'hidden'">
+                <p class='logo'>
+                        <i class="fa fa-shopping-cart" style="color:white"></i> shop<span style="color:white">ify</span>
+                    </p>
+                <div class="navBtnsHome">
+                    <button class="btn btn-info" onclick="location.reload();"><i class="fa fa-home"></i> Home</button>
+                    <button class="btn btn-info" style='margin:4px auto;' onclick="ads()"><i class="fa fa-folder-open"></i> All Ads</button>
+                    <button class="btn btn-info" style='margin:0px auto;' onclick="favs()"><i class="fa fa-star"></i> Favourites</button>
+                    <p class="c"><i class="fa fa-angle-down"></i> Categories</p>
+                    <div class="cBtns">
+                        <button type="button" class="btn btn-outline-info" onclick="category('bikes')"><i class="fa fa-motorcycle"></i> Bikes</button>
+                        <button type="button" class="btn btn-outline-info" onclick="category('cars')"><i class="fa fa-car"></i> Cars</button>
+                        <button type="button" class="btn btn-outline-info" onclick="category('mobiles')"><i class="fa fa-mobile"></i> Mobiles</button>
+                        <button type="button" class="btn btn-outline-info" onclick="category('electronics')"><i class="fa fa-television"></i> Electronics</button>
+                        <button type="button" class="btn btn-outline-info" onclick="category('furniture')"><i class="fa fa-bed"></i> Furniture</button>
+                        <button type="button" class="btn btn-outline-info" onclick="category('fashion')"><i class="fa fa-black-tie"></i> Fashion</button>
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class='navR'>
+                    <button class='btn btn-info' style='margin-right: 15px;' onclick="openNav()"><i class='fa fa-bars'></i></button>
+                    <p class='logoR' style="text-align:left">
+                        <i class="fa fa-shopping-cart" style="color:white"></i> shop<span style="color:white">ify</span>
+                    </p>
+                    <p id="location2"><i class='fa fa-map-marker'></i> Pakistan</p>
+            </div>
+            <div id='rNav'>
+                    <p class="closeNav" onclick="closeNav();">
+                            <i class="fa fa-close"></i>
+                    </p>
+                        <div class="navBtnsHome">
+                                <button class="btn btn-info" style='margin:2px auto;' onclick="location.reload();"><i class="fa fa-home"></i> Home</button>
+                                <button class="btn btn-info" style='margin:4px auto;' onclick="ads(),closeNav()"><i class="fa fa-folder-open"></i> All Ads</button>
+                                <button class="btn btn-info" style='margin:2px auto;' onclick="favs(),closeNav()"><i class="fa fa-star"></i> Favourites</button>
+                                <p class="c"><i class="fa fa-angle-down"></i> Categories</p>
+                                <div class="cBtns">
+                                    <button type="button" class="btn btn-outline-info" onclick="category('bikes'),closeNav()"><i class="fa fa-motorcycle"></i> Bikes</button>
+                                    <button type="button" class="btn btn-outline-info" onclick="category('cars'),closeNav()"><i class="fa fa-car"></i> Cars</button>
+                                    <button type="button" class="btn btn-outline-info" onclick="category('mobiles'),closeNav()"><i class="fa fa-mobile"></i> Mobiles</button>
+                                    <button type="button" class="btn btn-outline-info" onclick="category('electronics'),closeNav()"><i class="fa fa-television"></i> Electronics</button>
+                                    <button type="button" class="btn btn-outline-info" onclick="category('furniture'),closeNav()"><i class="fa fa-bed"></i> Furniture</button>
+                                    <button type="button" class="btn btn-outline-info" onclick="category('fashion'),closeNav()"><i class="fa fa-black-tie"></i> Fashion</button>
+                                </div>
+                            </div>
+                    
+            </div>
+        
+            <div class="sideContent">
+                <div class="upperNav">
+                        <p id="location"><i class='fa fa-map-marker'></i> Pakistan</p>
+                <div class="searchArea">
+                    
+                    <input class="form-control" id="userInput" placeholder="find products"><button onclick="search()"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="bb">
+                    <button class="btn btn-link" onclick="location='./html/signin.html'"  style="color:rgb(18, 165, 165)"><i class="fa fa-sign-out"></i> log in</button>
+                    <button class="btn btn-info" onclick="location='./html/signin.html'"><i class="fa fa-shopping-cart"></i> Sell</button>
+                </div>
+              
+               
+            
+                </div>
+                <div class="bbr">
+                        <button class="btn btn-info" onclick="location='./html/signin.html'"><i class="fa fa-sign-out"></i> log in</button>
+                        <button class="btn btn-info" onclick="location='./html/signin.html'"><i class="fa fa-shopping-cart"></i> Sell</button>
+                </div>
+                <div id="info">
+                        <i class="fa fa-star-o"></i> You can search ads by search input and categories.
+                </div>
+                <div class="wallpaper">
+                    <img src='./background/wallpaper.jpg'>
+                </div>
+                <div id="contentHome">
+                    <div class="popularcategories">
+                        <p class="cateBar" id="cateBar"><span><i class="fa fa-angle-down"></i> Our Ads <br /><span style='font-size:60%; color:black; font-family:"Poppins"'> ( buy our most popular products ) </span></span></p>
+                    <div id="ads">
+    
+                    </div>
+                    </div>
+                        
+                    <div class="popularcategories">
+                    <p class="cateBar"><span><i class="fa fa-angle-down"></i> Popular Categories <br /><span style='font-size:60%; color:black; font-family:"Poppins"'> ( search threw popular categories ) </span></span><span><button class="btn btn-link" data-toggle='collapse' data-target='#moreCateg'><i class="fa fa-plus"></i> More Categories</button></span></p>
+                    <div class="popularC">
+                            <span class="collapse" id="moreCateg">
+                                    <a href="#cateBar">
+                                    <div onclick="category('electronics')">
+                                        <i class="fa fa-plus"></i>
+                                        <br />
+                                        Electronics
+                                    </div>
+                                    </a>
+                                    <a href="#cateBar">
+                                    <div onclick="category('furniture')">
+                                        <i class="fa fa-plus"></i>
+                                        <br />
+                                        Furniture
+                                    </div>
+                                    </a>
+                                    <a href="#cateBar">
+                                        <div onclick="category('mobiles')">
+                                                <i class="fa fa-plus"></i>
+                                                <br />
+                                                Mobiles
+                                        </div>
+                                        </a>
+                                    </span>
+                    <a href="#cateBar">
+                    <div onclick="category('fashion')">
+                        <i class="fa fa-plus"></i>
+                        <br />
+                        Fashion
+                    </div>
+                    </a>
+                    <a href="#cateBar">
+                    <div onclick="category('cars')">
+                        <i class="fa fa-plus"></i>
+                        <br />
+                        Cars
+                    </div>
+                    </a>
+                    <a href="#cateBar">
+                    <div onclick="category('bikes')">
+                        <i class="fa fa-plus"></i>
+                        <br />
+                        Bikes 
+                    </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="footer">
+                    @Copyrights 2018-19. All Rights Reserved for Shopify.
+                </div>
+    </div>
+
+</div>
+
+    <!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body" id="modalBody">
+                <h1 class='logHead'>Please enter your email and passsword!</h1>
+                <p class='logHeadSub'>You will need to enter your shopify account email and password in order to send message to seller.</p>
+            <div class='formMessage'>
+                <p class="line"></p>
+                <form action="JavaScript:void(0)" class="fMessage" onsubmit="loginMessage();">
+                    <div id="loader"><i class="fa fa-circle-o-notch fa-spin" style="font-size:24px"></i> Please Wait..</div>
+                    <input class="inputMessage" type="email" placeholder="Example@gmail.com" required id="email" title="Email">
+                    <input class="inputMessage" type="password" placeholder="Password" required id="password" title="Password">
+                    <p class="hr"></p>
+                    <button type="submit" title="Log in"><i class="fa fa-user"></i> LOG IN</button>
+                    <p class="already" title="Don't have and account?">Don't have an account?
+                            <a href="./html/signup.html" title="Create Account"> Sign up!</a>
+                    </p>
+                </form>  
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+     
+<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+<script src='./script/home.js'></script> 
+<script src="./script/sweetalert.js"></script>
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+ <!-- Popper JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</body>
+</html>

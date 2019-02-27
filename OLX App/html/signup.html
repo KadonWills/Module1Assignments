@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopify</title>
+    <link rel="stylesheet" href="../fonts/oswald.css">
+    <link rel="stylesheet" href="../fonts/poppins.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../icon/icon.png">
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Poppins';
+            background-color: #F1F5F8;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <div class="homeContainer">
+            <div class="headBackHome"><button onclick="location = '../index.html'"><i class='fa fa-arrow-left'></i> Back Home</button></div>
+            <div class="head">
+                <h1 class="logo" style="margin:0px auto;" title="Company Name"><i class="fa fa-shopping-cart" style="color:white"></i> Shop<span class="B">ify</span></h1>
+                <p class="adminAccess">( Create Account )</p>
+            </div>
+            <div class='form'>
+                <p class="line"></p>
+                <form action="JavaScript:void(0)" onsubmit="signup();">
+                    <input class="input" type="text" placeholder="name" required id="name" title="Name">
+                    <input class="input" type="email" placeholder="example@gmail.com" required id="email" title="Email">
+                    <p class="p"><small id="error" >password should contain atleast 8 characters!</small></p>
+                    <input class="input" type="password" placeholder="Password" required id="password" title="Password">
+                   
+                    <p class='p'>Profile Pic
+                        <span style="color:black; font-size:80%;"> ( 1 x 1 Prefered) </span>
+                    </p>
+                    <input type="file" id="profilePic" required title="Upload Pic">
+                    <div id="loader"><i class="fa fa-circle-o-notch fa-spin" style="font-size:24px"></i> Please Wait..</div>
+                    <p class="hr"></p>
+                    <button type="submit" title="Log in"><i class="fa fa-user"></i> Sign up</button>
+                    <p class="already" title="Already have an account?">Already have an account?
+                            <a href="../html/signin.html" title="Login"> Log in!</a>
+                    </p>
+                </form>
+               
+            </div>
+        </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+    <script src='../script/app.js'></script>
+    <script src="../script/sweetalert.js"></script>
+
+    <!-- jQuery library -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+    <!-- Popper JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script> -->
+
+    <!-- Latest compiled JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> -->
+</body>
+
+</html>

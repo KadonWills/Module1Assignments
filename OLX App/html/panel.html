@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopify</title>
+    <link rel="stylesheet" href="../fonts/oswald.css">
+    <link rel="stylesheet" href="../fonts/poppins.css">
+    <link rel="stylesheet" href="../css/panel.css">
+    <link rel="shortcut icon" href="../icon/icon.png">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Poppins';
+            background-color: #e8f0fa;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class='main'>
+       <div class='sideNav'>
+            <p class='logo'>
+                    <i class="fa fa-shopping-cart" style="color:white"></i> shop<span style="color:white">ify</span>
+                </p>
+            <div class="navBtns">
+                    <p id="location"><i class='fa fa-map-marker'></i> Pakistan</p>
+                <button class="btn btn-outline-info" onclick="dashboard();" title="Dashboard">
+                    <i class="fa fa-dashboard"></i> Dashboard</button>
+                <button class="btn btn-info" title="My Account" data-toggle="modal" data-target="#myModal">
+                    <i class='fa fa-user-plus'></i> Account</button>
+                <button class="btn btn-danger logout" style='background-color:#e45c75; border-color:#e45c75' onclick="logout();" title="Log out">
+                    <i class="fa fa-sign-out"></i> LOG OUT</button>
+            </div>
+        
+        </div>
+        
+        <div class='navR'>
+                <button class='btn btn-info' style='margin-right: 15px;' onclick="openNav()"><i class='fa fa-bars'></i></button>
+                <p class='logoR' style="text-align:left">
+                        <i class="fa fa-shopping-cart" style="color:white"></i> shop<span style="color:white">ify</span>
+                </p>
+                <p id="location2"><i class='fa fa-map-marker'></i> Pakistan</p>
+            </div>
+        <div id='rNav'>
+                <p class="closeNav" onclick="closeNav();">
+                        <i class="fa fa-close"></i>
+                    </p>
+        
+             <div class="navBtns">
+                        <button class="btn btn-outline-info" style="margin:6px auto;" onclick="dashboard(),closeNav();" title="Dashboard">
+                            <i class="fa fa-dashboard"></i> Dashboard</button>
+                        <button class="btn btn-info" style="margin:6px auto;" title="My Account" data-toggle="modal" data-target="#myModal">
+                            <i class='fa fa-user-plus'></i> Account</button>
+                        <button class="btn btn-danger logout" style="margin:6px auto;background-color:#e45c75; border-color:#e45c75"  onclick="logout();" title="Log out">
+                        <i class="fa fa-sign-out"></i> LOG OUT</button>
+                </div>
+        </div>
+
+        <div class="sideContent">
+               <div>
+                <p id="infoPanel">
+                    <span id='type'>
+                        <i class="fa fa-user"></i> User</span>            
+                    <span id="name"></span>
+                </p>
+               </div>
+               <div id='info'>
+                    <i class="fa fa-star-o"></i> This what you can do here.
+               </div>
+               <div id="wait"><i class="fa fa-circle-o-notch fa-spin" style="font-size:24px"></i> Please Wait..</div>
+               <div id="content">
+                
+               </div>
+               <div id="allChats">
+
+               </div>
+       </div>
+    </div>
+
+     <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title"><i class='fa fa-user-plus' style="color:rgb(18, 165, 165)"></i> Account Details</h4>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+                    <p id="p"></p>
+                    <p id="n"></p>
+                    <i class='fa fa-angle-double-down'></i>
+                    <p id="ema"></p>
+                    <p id="add"></p>    
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" style="width:100%;" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+    <script src='../script/panel.js'></script>
+    <script src="../script/sweetalert.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
