@@ -1,12 +1,7 @@
-var box = document.getElementById('display');
 function backSpace() {
-  
-    var number = box.value;
+    var number = document.getElementById('display').value;  
     
-    var len = number.length - 1;
+    var newNumber = number.substring( 0, number.length - 1 );
     
-    var newNumber = number.substring( 0, len );
-    
-    box.value = newNumber;
-  
+    number = newNumber;
   }
